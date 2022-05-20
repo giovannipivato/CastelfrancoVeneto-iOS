@@ -1,0 +1,695 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DB24601B27FD75E700D11B92 /* Descrizione.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB24601A27FD75E700D11B92 /* Descrizione.swift */; };
+		DB27FFCC27F5816C0018DDF5 /* DownloadIMG.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB27FFCB27F5816C0018DDF5 /* DownloadIMG.swift */; };
+		DB27FFD027F59E9E0018DDF5 /* DownloadJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB27FFCF27F59E9E0018DDF5 /* DownloadJSON.swift */; };
+		DB7114DF2805973800EA478D /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB7114DD2805973700EA478D /* View.xib */; };
+		DB7114E02805973800EA478D /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7114DE2805973700EA478D /* View.swift */; };
+		DB88B80327F43D3B00DE76CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB88B80227F43D3B00DE76CD /* AppDelegate.swift */; };
+		DB88B80527F43D3B00DE76CD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB88B80427F43D3B00DE76CD /* SceneDelegate.swift */; };
+		DB88B80727F43D3B00DE76CD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB88B80627F43D3B00DE76CD /* ViewController.swift */; };
+		DB88B80A27F43D3B00DE76CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB88B80827F43D3B00DE76CD /* Main.storyboard */; };
+		DB88B80C27F43D4000DE76CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB88B80B27F43D4000DE76CD /* Assets.xcassets */; };
+		DB88B80F27F43D4000DE76CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB88B80D27F43D4000DE76CD /* LaunchScreen.storyboard */; };
+		DB88B81A27F43D4100DE76CD /* CastelturismoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB88B81927F43D4100DE76CD /* CastelturismoTests.swift */; };
+		DB88B82427F43D4100DE76CD /* CastelturismoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB88B82327F43D4100DE76CD /* CastelturismoUITests.swift */; };
+		DB88B82627F43D4100DE76CD /* CastelturismoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB88B82527F43D4100DE76CD /* CastelturismoUITestsLaunchTests.swift */; };
+		DB88B83427F4491000DE76CD /* Dimora.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB88B83327F4491000DE76CD /* Dimora.swift */; };
+		DB88B83627F44DAF00DE76CD /* Zona.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB88B83527F44DAF00DE76CD /* Zona.swift */; };
+		DB88B83827F473B000DE76CD /* Foto.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB88B83727F473B000DE76CD /* Foto.swift */; };
+		DBC7630D27F6144F000D1642 /* ZonaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC7630C27F6144F000D1642 /* ZonaController.swift */; };
+		DBC7630F27F67B7D000D1642 /* IntroDimoraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC7630E27F67B7D000D1642 /* IntroDimoraController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DB88B81627F43D4100DE76CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB88B7F727F43D3B00DE76CD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB88B7FE27F43D3B00DE76CD;
+			remoteInfo = Castelturismo;
+		};
+		DB88B82027F43D4100DE76CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB88B7F727F43D3B00DE76CD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB88B7FE27F43D3B00DE76CD;
+			remoteInfo = Castelturismo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DB24601A27FD75E700D11B92 /* Descrizione.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Descrizione.swift; sourceTree = "<group>"; };
+		DB27FFCB27F5816C0018DDF5 /* DownloadIMG.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadIMG.swift; sourceTree = "<group>"; };
+		DB27FFCF27F59E9E0018DDF5 /* DownloadJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadJSON.swift; sourceTree = "<group>"; };
+		DB7114DD2805973700EA478D /* View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
+		DB7114DE2805973700EA478D /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		DB88B7FF27F43D3B00DE76CD /* Castelturismo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Castelturismo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB88B80227F43D3B00DE76CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DB88B80427F43D3B00DE76CD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DB88B80627F43D3B00DE76CD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DB88B80927F43D3B00DE76CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DB88B80B27F43D4000DE76CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DB88B80E27F43D4000DE76CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DB88B81527F43D4100DE76CD /* CastelturismoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CastelturismoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB88B81927F43D4100DE76CD /* CastelturismoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastelturismoTests.swift; sourceTree = "<group>"; };
+		DB88B81F27F43D4100DE76CD /* CastelturismoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CastelturismoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB88B82327F43D4100DE76CD /* CastelturismoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastelturismoUITests.swift; sourceTree = "<group>"; };
+		DB88B82527F43D4100DE76CD /* CastelturismoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastelturismoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DB88B83327F4491000DE76CD /* Dimora.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dimora.swift; sourceTree = "<group>"; };
+		DB88B83527F44DAF00DE76CD /* Zona.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zona.swift; sourceTree = "<group>"; };
+		DB88B83727F473B000DE76CD /* Foto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Foto.swift; sourceTree = "<group>"; };
+		DB88B83927F4CDC600DE76CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Base; path = Base.lproj/Info.plist; sourceTree = "<group>"; };
+		DBC7630C27F6144F000D1642 /* ZonaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZonaController.swift; sourceTree = "<group>"; };
+		DBC7630E27F67B7D000D1642 /* IntroDimoraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroDimoraController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DB88B7FC27F43D3B00DE76CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB88B81227F43D4100DE76CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB88B81C27F43D4100DE76CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DB27FFCA27F57FC50018DDF5 /* Classi Richieste */ = {
+			isa = PBXGroup;
+			children = (
+				DB27FFCB27F5816C0018DDF5 /* DownloadIMG.swift */,
+				DB27FFCF27F59E9E0018DDF5 /* DownloadJSON.swift */,
+			);
+			path = "Classi Richieste";
+			sourceTree = "<group>";
+		};
+		DB870D0828345FAA004D053D /* ViewScrollDimora */ = {
+			isa = PBXGroup;
+			children = (
+				DB7114DE2805973700EA478D /* View.swift */,
+				DB7114DD2805973700EA478D /* View.xib */,
+			);
+			path = ViewScrollDimora;
+			sourceTree = "<group>";
+		};
+		DB88B7F627F43D3B00DE76CD = {
+			isa = PBXGroup;
+			children = (
+				DB27FFCA27F57FC50018DDF5 /* Classi Richieste */,
+				DB88B83227F4475E00DE76CD /* Classi */,
+				DB88B80127F43D3B00DE76CD /* Castelturismo */,
+				DB88B81827F43D4100DE76CD /* CastelturismoTests */,
+				DB88B82227F43D4100DE76CD /* CastelturismoUITests */,
+				DB88B80027F43D3B00DE76CD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DB88B80027F43D3B00DE76CD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DB88B7FF27F43D3B00DE76CD /* Castelturismo.app */,
+				DB88B81527F43D4100DE76CD /* CastelturismoTests.xctest */,
+				DB88B81F27F43D4100DE76CD /* CastelturismoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DB88B80127F43D3B00DE76CD /* Castelturismo */ = {
+			isa = PBXGroup;
+			children = (
+				DB870D0828345FAA004D053D /* ViewScrollDimora */,
+				DBC7630E27F67B7D000D1642 /* IntroDimoraController.swift */,
+				DBC7630C27F6144F000D1642 /* ZonaController.swift */,
+				DB88B80227F43D3B00DE76CD /* AppDelegate.swift */,
+				DB88B80427F43D3B00DE76CD /* SceneDelegate.swift */,
+				DB88B80627F43D3B00DE76CD /* ViewController.swift */,
+				DB88B80827F43D3B00DE76CD /* Main.storyboard */,
+				DB88B80B27F43D4000DE76CD /* Assets.xcassets */,
+				DB88B80D27F43D4000DE76CD /* LaunchScreen.storyboard */,
+				DB88B83A27F4CDC600DE76CD /* Info.plist */,
+			);
+			path = Castelturismo;
+			sourceTree = "<group>";
+		};
+		DB88B81827F43D4100DE76CD /* CastelturismoTests */ = {
+			isa = PBXGroup;
+			children = (
+				DB88B81927F43D4100DE76CD /* CastelturismoTests.swift */,
+			);
+			path = CastelturismoTests;
+			sourceTree = "<group>";
+		};
+		DB88B82227F43D4100DE76CD /* CastelturismoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DB88B82327F43D4100DE76CD /* CastelturismoUITests.swift */,
+				DB88B82527F43D4100DE76CD /* CastelturismoUITestsLaunchTests.swift */,
+			);
+			path = CastelturismoUITests;
+			sourceTree = "<group>";
+		};
+		DB88B83227F4475E00DE76CD /* Classi */ = {
+			isa = PBXGroup;
+			children = (
+				DB88B83327F4491000DE76CD /* Dimora.swift */,
+				DB88B83527F44DAF00DE76CD /* Zona.swift */,
+				DB88B83727F473B000DE76CD /* Foto.swift */,
+				DB24601A27FD75E700D11B92 /* Descrizione.swift */,
+			);
+			path = Classi;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DB88B7FE27F43D3B00DE76CD /* Castelturismo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB88B82927F43D4100DE76CD /* Build configuration list for PBXNativeTarget "Castelturismo" */;
+			buildPhases = (
+				DB88B7FB27F43D3B00DE76CD /* Sources */,
+				DB88B7FC27F43D3B00DE76CD /* Frameworks */,
+				DB88B7FD27F43D3B00DE76CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Castelturismo;
+			productName = Castelturismo;
+			productReference = DB88B7FF27F43D3B00DE76CD /* Castelturismo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DB88B81427F43D4100DE76CD /* CastelturismoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB88B82C27F43D4100DE76CD /* Build configuration list for PBXNativeTarget "CastelturismoTests" */;
+			buildPhases = (
+				DB88B81127F43D4100DE76CD /* Sources */,
+				DB88B81227F43D4100DE76CD /* Frameworks */,
+				DB88B81327F43D4100DE76CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DB88B81727F43D4100DE76CD /* PBXTargetDependency */,
+			);
+			name = CastelturismoTests;
+			productName = CastelturismoTests;
+			productReference = DB88B81527F43D4100DE76CD /* CastelturismoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DB88B81E27F43D4100DE76CD /* CastelturismoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB88B82F27F43D4100DE76CD /* Build configuration list for PBXNativeTarget "CastelturismoUITests" */;
+			buildPhases = (
+				DB88B81B27F43D4100DE76CD /* Sources */,
+				DB88B81C27F43D4100DE76CD /* Frameworks */,
+				DB88B81D27F43D4100DE76CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DB88B82127F43D4100DE76CD /* PBXTargetDependency */,
+			);
+			name = CastelturismoUITests;
+			productName = CastelturismoUITests;
+			productReference = DB88B81F27F43D4100DE76CD /* CastelturismoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DB88B7F727F43D3B00DE76CD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					DB88B7FE27F43D3B00DE76CD = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					DB88B81427F43D4100DE76CD = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = DB88B7FE27F43D3B00DE76CD;
+					};
+					DB88B81E27F43D4100DE76CD = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = DB88B7FE27F43D3B00DE76CD;
+					};
+				};
+			};
+			buildConfigurationList = DB88B7FA27F43D3B00DE76CD /* Build configuration list for PBXProject "Castelturismo" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DB88B7F627F43D3B00DE76CD;
+			productRefGroup = DB88B80027F43D3B00DE76CD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DB88B7FE27F43D3B00DE76CD /* Castelturismo */,
+				DB88B81427F43D4100DE76CD /* CastelturismoTests */,
+				DB88B81E27F43D4100DE76CD /* CastelturismoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DB88B7FD27F43D3B00DE76CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB7114DF2805973800EA478D /* View.xib in Resources */,
+				DB88B80F27F43D4000DE76CD /* LaunchScreen.storyboard in Resources */,
+				DB88B80C27F43D4000DE76CD /* Assets.xcassets in Resources */,
+				DB88B80A27F43D3B00DE76CD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB88B81327F43D4100DE76CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB88B81D27F43D4100DE76CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DB88B7FB27F43D3B00DE76CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB88B80727F43D3B00DE76CD /* ViewController.swift in Sources */,
+				DB88B80327F43D3B00DE76CD /* AppDelegate.swift in Sources */,
+				DBC7630F27F67B7D000D1642 /* IntroDimoraController.swift in Sources */,
+				DB88B83627F44DAF00DE76CD /* Zona.swift in Sources */,
+				DB24601B27FD75E700D11B92 /* Descrizione.swift in Sources */,
+				DB88B80527F43D3B00DE76CD /* SceneDelegate.swift in Sources */,
+				DB88B83427F4491000DE76CD /* Dimora.swift in Sources */,
+				DB88B83827F473B000DE76CD /* Foto.swift in Sources */,
+				DB7114E02805973800EA478D /* View.swift in Sources */,
+				DBC7630D27F6144F000D1642 /* ZonaController.swift in Sources */,
+				DB27FFCC27F5816C0018DDF5 /* DownloadIMG.swift in Sources */,
+				DB27FFD027F59E9E0018DDF5 /* DownloadJSON.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB88B81127F43D4100DE76CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB88B81A27F43D4100DE76CD /* CastelturismoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB88B81B27F43D4100DE76CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB88B82627F43D4100DE76CD /* CastelturismoUITestsLaunchTests.swift in Sources */,
+				DB88B82427F43D4100DE76CD /* CastelturismoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DB88B81727F43D4100DE76CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB88B7FE27F43D3B00DE76CD /* Castelturismo */;
+			targetProxy = DB88B81627F43D4100DE76CD /* PBXContainerItemProxy */;
+		};
+		DB88B82127F43D4100DE76CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB88B7FE27F43D3B00DE76CD /* Castelturismo */;
+			targetProxy = DB88B82027F43D4100DE76CD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DB88B80827F43D3B00DE76CD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB88B80927F43D3B00DE76CD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DB88B80D27F43D4000DE76CD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB88B80E27F43D4000DE76CD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		DB88B83A27F4CDC600DE76CD /* Info.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB88B83927F4CDC600DE76CD /* Base */,
+			);
+			name = Info.plist;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DB88B82727F43D4100DE76CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DB88B82827F43D4100DE76CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DB88B82A27F43D4100DE76CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Castelturismo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pivato.Castelturismo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DB88B82B27F43D4100DE76CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Castelturismo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pivato.Castelturismo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DB88B82D27F43D4100DE76CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pivato.CastelturismoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Castelturismo.app/Castelturismo";
+			};
+			name = Debug;
+		};
+		DB88B82E27F43D4100DE76CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pivato.CastelturismoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Castelturismo.app/Castelturismo";
+			};
+			name = Release;
+		};
+		DB88B83027F43D4100DE76CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pivato.CastelturismoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Castelturismo;
+			};
+			name = Debug;
+		};
+		DB88B83127F43D4100DE76CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pivato.CastelturismoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Castelturismo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DB88B7FA27F43D3B00DE76CD /* Build configuration list for PBXProject "Castelturismo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB88B82727F43D4100DE76CD /* Debug */,
+				DB88B82827F43D4100DE76CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB88B82927F43D4100DE76CD /* Build configuration list for PBXNativeTarget "Castelturismo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB88B82A27F43D4100DE76CD /* Debug */,
+				DB88B82B27F43D4100DE76CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB88B82C27F43D4100DE76CD /* Build configuration list for PBXNativeTarget "CastelturismoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB88B82D27F43D4100DE76CD /* Debug */,
+				DB88B82E27F43D4100DE76CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB88B82F27F43D4100DE76CD /* Build configuration list for PBXNativeTarget "CastelturismoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB88B83027F43D4100DE76CD /* Debug */,
+				DB88B83127F43D4100DE76CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DB88B7F727F43D3B00DE76CD /* Project object */;
+}
