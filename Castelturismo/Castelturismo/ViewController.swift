@@ -35,10 +35,10 @@ class ViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-            
         let btn = sender as! UIButton
-            
-        let zonaController = segue.destination as! ZonaController
-        zonaController.idZona = btn.tag
+		if segue.identifier == "zona" {
+			let zonaController = segue.destination as! ZonaController
+			zonaController.idZona = btn.tag
+		}
     }
 }
