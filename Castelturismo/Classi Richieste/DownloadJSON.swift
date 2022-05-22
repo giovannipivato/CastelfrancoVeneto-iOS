@@ -29,7 +29,7 @@ public class DownloadJSON {
             guard let data = data else {
                 print("error")
                 return }
-            
+			
             if let zona = try? JSONDecoder().decode(Zona.self, from: data)
             {
                 print(zona)
