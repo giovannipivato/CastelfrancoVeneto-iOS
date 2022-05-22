@@ -150,6 +150,9 @@
                                                 <integer key="value" value="1"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="WYk-dc-Zwc" kind="show" id="PTn-h1-3eE"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HQb-JA-PzE">
                                         <rect key="frame" x="138" y="15" width="138" height="50"/>
@@ -293,12 +296,80 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pGi-NM-kWz" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="right" id="XCh-jh-TgU"/>
             </objects>
-            <point key="canvasLocation" x="1011.5942028985507" y="61.607142857142854"/>
+            <point key="canvasLocation" x="1045" y="62"/>
         </scene>
-        <!--View Controller-->
+        <!--Filtri Controller-->
+        <scene sceneID="tL8-Nv-FdT">
+            <objects>
+                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="WYk-dc-Zwc" customClass="FiltriController" customModule="Castelturismo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Irh-bK-nkZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Aci-Gy-RNn">
+                                <rect key="frame" x="0.0" y="44" width="414" height="100"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B26-5M-4wU">
+                                        <rect key="frame" x="24" y="32.5" width="40" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="ULs-4X-QGB"/>
+                                            <constraint firstAttribute="width" constant="40" id="VGS-PR-XPx"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <backgroundConfiguration key="background" image="iconafrecciaback" imageContentMode="scaleAspectFit"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="0zm-Nb-dAd"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="F I L T R I" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MOW-GX-tGh">
+                                        <rect key="frame" x="107" y="33.5" width="200" height="33"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="pkl-6p-Lue"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="27"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="B26-5M-4wU" firstAttribute="leading" secondItem="Aci-Gy-RNn" secondAttribute="leading" constant="24" id="GQz-0K-SWE"/>
+                                    <constraint firstItem="MOW-GX-tGh" firstAttribute="centerX" secondItem="Aci-Gy-RNn" secondAttribute="centerX" id="JnW-Jr-t48"/>
+                                    <constraint firstItem="B26-5M-4wU" firstAttribute="centerY" secondItem="Aci-Gy-RNn" secondAttribute="centerY" id="o4f-wt-Ece"/>
+                                    <constraint firstItem="MOW-GX-tGh" firstAttribute="centerY" secondItem="Aci-Gy-RNn" secondAttribute="centerY" id="q3v-7D-1sK"/>
+                                    <constraint firstAttribute="height" constant="100" id="y7i-w2-ptY"/>
+                                </constraints>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4YT-g4-uYg">
+                                <rect key="frame" x="0.0" y="144" width="414" height="752"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="z4m-RE-zDI"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Aci-Gy-RNn" firstAttribute="top" secondItem="z4m-RE-zDI" secondAttribute="top" id="4Xz-hq-P8o"/>
+                            <constraint firstItem="4YT-g4-uYg" firstAttribute="top" secondItem="Aci-Gy-RNn" secondAttribute="bottom" id="9MC-Ij-64q"/>
+                            <constraint firstItem="4YT-g4-uYg" firstAttribute="trailing" secondItem="z4m-RE-zDI" secondAttribute="trailing" id="CaE-fW-5q2"/>
+                            <constraint firstAttribute="bottom" secondItem="4YT-g4-uYg" secondAttribute="bottom" id="S7B-oQ-YXr"/>
+                            <constraint firstAttribute="trailing" secondItem="Aci-Gy-RNn" secondAttribute="trailing" id="ZlE-FI-7T4"/>
+                            <constraint firstItem="4YT-g4-uYg" firstAttribute="leading" secondItem="z4m-RE-zDI" secondAttribute="leading" id="gx2-DR-Feq"/>
+                            <constraint firstItem="Aci-Gy-RNn" firstAttribute="leading" secondItem="z4m-RE-zDI" secondAttribute="leading" id="j8o-Ap-JhC"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="eDw-9J-3Tt"/>
+                    <connections>
+                        <outlet property="scrollView" destination="4YT-g4-uYg" id="PnD-iT-sgO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m9R-FJ-UsH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1199" y="844"/>
+        </scene>
+        <!--Itinerari Controller-->
         <scene sceneID="XHQ-pX-sfZ">
             <objects>
-                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="VfJ-eO-pvJ" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="VfJ-eO-pvJ" customClass="ItinerariController" customModule="Castelturismo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JiJ-kd-MAf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -320,8 +391,11 @@
                                             <segue destination="BYZ-38-t0r" kind="show" id="22x-fL-gBg"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="F I L T R I" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AeT-GX-shx">
-                                        <rect key="frame" x="147.5" y="34" width="119.5" height="32.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I T I N E R A R I" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AeT-GX-shx">
+                                        <rect key="frame" x="107" y="33.5" width="200" height="33"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="Zav-YO-4fk"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="27"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -335,20 +409,30 @@
                                     <constraint firstItem="2Hf-YR-hBu" firstAttribute="centerY" secondItem="ypQ-Ub-Ohc" secondAttribute="centerY" id="xaI-3O-25d"/>
                                 </constraints>
                             </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MAc-cg-HY5">
+                                <rect key="frame" x="0.0" y="144" width="414" height="752"/>
+                            </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5LF-N1-bNZ"/>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="ypQ-Ub-Ohc" firstAttribute="top" secondItem="5LF-N1-bNZ" secondAttribute="top" id="FPV-Mf-2ti"/>
                             <constraint firstItem="ypQ-Ub-Ohc" firstAttribute="leading" secondItem="JiJ-kd-MAf" secondAttribute="leading" id="ZUQ-H9-wuW"/>
+                            <constraint firstAttribute="bottom" secondItem="MAc-cg-HY5" secondAttribute="bottom" id="cyG-ub-G3X"/>
+                            <constraint firstItem="MAc-cg-HY5" firstAttribute="leading" secondItem="5LF-N1-bNZ" secondAttribute="leading" id="n78-J2-JLg"/>
+                            <constraint firstItem="MAc-cg-HY5" firstAttribute="top" secondItem="ypQ-Ub-Ohc" secondAttribute="bottom" id="qBg-ce-RQ3"/>
+                            <constraint firstItem="MAc-cg-HY5" firstAttribute="trailing" secondItem="5LF-N1-bNZ" secondAttribute="trailing" id="qwj-6X-n0W"/>
                             <constraint firstItem="5LF-N1-bNZ" firstAttribute="trailing" secondItem="ypQ-Ub-Ohc" secondAttribute="trailing" id="xQg-Fs-qCK"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="hvO-lT-T0f"/>
+                    <connections>
+                        <outlet property="scrollView" destination="MAc-cg-HY5" id="PMm-6E-iR7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G0j-PB-EXP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="554" y="819"/>
+            <point key="canvasLocation" x="120" y="844"/>
         </scene>
         <!--Intro Dimora Controller-->
         <scene sceneID="PAK-WE-9H7">
@@ -368,7 +452,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="Xvk-Oj-qWt"/>
-        <segue reference="V7e-3e-Abb"/>
+        <segue reference="0zm-Nb-dAd"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Iconaorologio" width="114" height="117"/>

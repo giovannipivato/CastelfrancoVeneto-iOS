@@ -4,6 +4,8 @@
 <dict>
 	<key>NSAppTransportSecurity</key>
 	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
 		<key>NSAllowsLocalNetworkingUsageDescription</key>
 		<dict/>
 		<key>NSExceptionDomains</key>
@@ -11,8 +13,6 @@
 			<key>prolococasteo.altervista.org</key>
 			<string></string>
 		</dict>
-		<key>NSAllowsArbitraryLoads</key>
-		<true/>
 	</dict>
 	<key>UIApplicationSceneManifest</key>
 	<dict>

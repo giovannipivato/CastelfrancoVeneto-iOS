@@ -25,14 +25,14 @@ class ViewController: UIViewController {
         
         self.imgZone.image =  UIImage(named: "home.png")!
         
-        let downloadZona = DownloadJSON(method: onFinishZona(zona:))
-        downloadZona.getJSONzona(from: 1)
+//        let downloadZona = DownloadJSON(method: onFinishZona(zona:))
+//        downloadZona.getJSONzona(from: 1)
     }
 
-    func onFinishZona(zona: Zona) -> Void {
-        print("onFinishZona")
-        print("ciao ", zona.dimore.count)
-    }
+//    func onFinishZona(zona: Zona) -> Void {
+//        print("onFinishZona")
+//        print("ciao ", zona.dimore.count)
+//    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let btn = sender as! UIButton

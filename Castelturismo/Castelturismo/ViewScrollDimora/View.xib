@@ -34,13 +34,6 @@
             </connections>
             <point key="canvasLocation" x="137.68115942028987" y="113.83928571428571"/>
         </view>
-        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="Sxy-9O-qQf">
-            <rect key="frame" x="0.0" y="0.0" width="67" height="31"/>
-            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <state key="normal" title="Button"/>
-            <buttonConfiguration key="configuration" style="plain" title="Button"/>
-            <point key="canvasLocation" x="86" y="471"/>
-        </button>
     </objects>
     <resources>
         <image name="iconascopri" width="436" height="123"/>
