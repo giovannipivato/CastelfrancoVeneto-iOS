@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B654FC9283997E500C4ACEB /* ItinerariController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B654FC8283997E500C4ACEB /* ItinerariController.swift */; };
+		5B6E62C0283A3D8D00449CD3 /* config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6E62BF283A3D8D00449CD3 /* config.swift */; };
+		5B6E62C2283A433A00449CD3 /* FiltriController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6E62C1283A433A00449CD3 /* FiltriController.swift */; };
+		5B6E62C4283A4B1700449CD3 /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6E62C3283A4B1700449CD3 /* Filter.swift */; };
+		5BEB01BA283A37E1000D2A15 /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEB01B7283A3768000D2A15 /* extensions.swift */; };
 		DB24601B27FD75E700D11B92 /* Descrizione.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB24601A27FD75E700D11B92 /* Descrizione.swift */; };
 		DB27FFCC27F5816C0018DDF5 /* DownloadIMG.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB27FFCB27F5816C0018DDF5 /* DownloadIMG.swift */; };
 		DB27FFD027F59E9E0018DDF5 /* DownloadJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB27FFCF27F59E9E0018DDF5 /* DownloadJSON.swift */; };
@@ -46,6 +51,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5B654FC8283997E500C4ACEB /* ItinerariController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItinerariController.swift; sourceTree = "<group>"; };
+		5B6E62BF283A3D8D00449CD3 /* config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = config.swift; sourceTree = "<group>"; };
+		5B6E62C1283A433A00449CD3 /* FiltriController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltriController.swift; sourceTree = "<group>"; };
+		5B6E62C3283A4B1700449CD3 /* Filter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
+		5BEB01B7283A3768000D2A15 /* extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
 		DB24601A27FD75E700D11B92 /* Descrizione.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Descrizione.swift; sourceTree = "<group>"; };
 		DB27FFCB27F5816C0018DDF5 /* DownloadIMG.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadIMG.swift; sourceTree = "<group>"; };
 		DB27FFCF27F59E9E0018DDF5 /* DownloadJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadJSON.swift; sourceTree = "<group>"; };
@@ -117,6 +127,8 @@
 		DB88B7F627F43D3B00DE76CD = {
 			isa = PBXGroup;
 			children = (
+				5B6E62BF283A3D8D00449CD3 /* config.swift */,
+				5BEB01B7283A3768000D2A15 /* extensions.swift */,
 				DB27FFCA27F57FC50018DDF5 /* Classi Richieste */,
 				DB88B83227F4475E00DE76CD /* Classi */,
 				DB88B80127F43D3B00DE76CD /* Castelturismo */,
@@ -149,6 +161,8 @@
 				DB88B80B27F43D4000DE76CD /* Assets.xcassets */,
 				DB88B80D27F43D4000DE76CD /* LaunchScreen.storyboard */,
 				DB88B83A27F4CDC600DE76CD /* Info.plist */,
+				5B654FC8283997E500C4ACEB /* ItinerariController.swift */,
+				5B6E62C1283A433A00449CD3 /* FiltriController.swift */,
 			);
 			path = Castelturismo;
 			sourceTree = "<group>";
@@ -177,6 +191,7 @@
 				DB88B83527F44DAF00DE76CD /* Zona.swift */,
 				DB88B83727F473B000DE76CD /* Foto.swift */,
 				DB24601A27FD75E700D11B92 /* Descrizione.swift */,
+				5B6E62C3283A4B1700449CD3 /* Filter.swift */,
 			);
 			path = Classi;
 			sourceTree = "<group>";
@@ -313,8 +328,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B654FC9283997E500C4ACEB /* ItinerariController.swift in Sources */,
 				DB88B80727F43D3B00DE76CD /* ViewController.swift in Sources */,
 				DB88B80327F43D3B00DE76CD /* AppDelegate.swift in Sources */,
+				5B6E62C0283A3D8D00449CD3 /* config.swift in Sources */,
+				5BEB01BA283A37E1000D2A15 /* extensions.swift in Sources */,
 				DBC7630F27F67B7D000D1642 /* IntroDimoraController.swift in Sources */,
 				DB88B83627F44DAF00DE76CD /* Zona.swift in Sources */,
 				DB24601B27FD75E700D11B92 /* Descrizione.swift in Sources */,
@@ -325,6 +343,8 @@
 				DBC7630D27F6144F000D1642 /* ZonaController.swift in Sources */,
 				DB27FFCC27F5816C0018DDF5 /* DownloadIMG.swift in Sources */,
 				DB27FFD027F59E9E0018DDF5 /* DownloadJSON.swift in Sources */,
+				5B6E62C2283A433A00449CD3 /* FiltriController.swift in Sources */,
+				5B6E62C4283A4B1700449CD3 /* Filter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,6 +536,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -527,7 +548,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -543,6 +564,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -554,7 +576,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
