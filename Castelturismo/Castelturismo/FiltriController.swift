@@ -37,7 +37,7 @@ class FiltriController: UIViewController {
 	}
 	
 	private func setupFilters() {
-		filtersState = Filter.getFilters()
+		filtersState = Filter.getFilters() // get from UserDefaults
 		
 		for i in 0..<filters.count {
 			let filterButton = UIButton()
@@ -55,6 +55,7 @@ class FiltriController: UIViewController {
 			filterButton.titleLabel!.font = UIFont(name: "Helvetica Neue", size: 20)
 			filterButton.titleLabel!.numberOfLines = 2
 			filterButton.titleLabel!.leadingAnchor.constraint(equalTo: filterButton.leadingAnchor, constant: 130).isActive = true
+			filterButton.titleLabel!.widthAnchor.constraint(equalTo: filterButton.widthAnchor, constant: -140).isActive = true
 			
 			filterButton.addTarget(self, action: #selector(handleFilterClick), for: .touchUpInside)
 			filterButton.tag = i
@@ -70,6 +71,7 @@ class FiltriController: UIViewController {
 		}
 		
 		filtersState[id].isChecked = !filtersState[id].isChecked
+		// update in UserDefaults
 		Filter.updateFilter(id: id, isChecked: filtersState[id].isChecked)
 	}
 	

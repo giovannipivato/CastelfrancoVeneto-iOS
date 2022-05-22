@@ -19,7 +19,7 @@
 		DB7114E02805973800EA478D /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7114DE2805973700EA478D /* View.swift */; };
 		DB88B80327F43D3B00DE76CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB88B80227F43D3B00DE76CD /* AppDelegate.swift */; };
 		DB88B80527F43D3B00DE76CD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB88B80427F43D3B00DE76CD /* SceneDelegate.swift */; };
-		DB88B80727F43D3B00DE76CD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB88B80627F43D3B00DE76CD /* ViewController.swift */; };
+		DB88B80727F43D3B00DE76CD /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB88B80627F43D3B00DE76CD /* HomeController.swift */; };
 		DB88B80A27F43D3B00DE76CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB88B80827F43D3B00DE76CD /* Main.storyboard */; };
 		DB88B80C27F43D4000DE76CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB88B80B27F43D4000DE76CD /* Assets.xcassets */; };
 		DB88B80F27F43D4000DE76CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB88B80D27F43D4000DE76CD /* LaunchScreen.storyboard */; };
@@ -64,7 +64,7 @@
 		DB88B7FF27F43D3B00DE76CD /* Castelturismo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Castelturismo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB88B80227F43D3B00DE76CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB88B80427F43D3B00DE76CD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DB88B80627F43D3B00DE76CD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DB88B80627F43D3B00DE76CD /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		DB88B80927F43D3B00DE76CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DB88B80B27F43D4000DE76CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB88B80E27F43D4000DE76CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -156,7 +156,7 @@
 				DBC7630C27F6144F000D1642 /* ZonaController.swift */,
 				DB88B80227F43D3B00DE76CD /* AppDelegate.swift */,
 				DB88B80427F43D3B00DE76CD /* SceneDelegate.swift */,
-				DB88B80627F43D3B00DE76CD /* ViewController.swift */,
+				DB88B80627F43D3B00DE76CD /* HomeController.swift */,
 				DB88B80827F43D3B00DE76CD /* Main.storyboard */,
 				DB88B80B27F43D4000DE76CD /* Assets.xcassets */,
 				DB88B80D27F43D4000DE76CD /* LaunchScreen.storyboard */,
@@ -329,7 +329,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B654FC9283997E500C4ACEB /* ItinerariController.swift in Sources */,
-				DB88B80727F43D3B00DE76CD /* ViewController.swift in Sources */,
+				DB88B80727F43D3B00DE76CD /* HomeController.swift in Sources */,
 				DB88B80327F43D3B00DE76CD /* AppDelegate.swift in Sources */,
 				5B6E62C0283A3D8D00449CD3 /* config.swift in Sources */,
 				5BEB01BA283A37E1000D2A15 /* extensions.swift in Sources */,

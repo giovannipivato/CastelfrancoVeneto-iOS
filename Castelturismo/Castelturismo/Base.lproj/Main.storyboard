@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Home Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="ViewController" customModule="Castelturismo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="HomeController" customModule="Castelturismo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -35,6 +35,7 @@
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="gray">
                                                             <backgroundConfiguration key="background" cornerRadius="0.0"/>
+                                                            <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
                                                         <connections>
                                                             <segue destination="qD0-L3-AEx" kind="presentation" identifier="zona" modalPresentationStyle="fullScreen" id="Xvk-Oj-qWt"/>
@@ -45,6 +46,7 @@
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="gray">
                                                             <backgroundConfiguration key="background" cornerRadius="0.0"/>
+                                                            <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
                                                         <connections>
                                                             <segue destination="qD0-L3-AEx" kind="presentation" identifier="zona" modalPresentationStyle="fullScreen" id="3IN-Kn-6nn"/>
@@ -60,6 +62,7 @@
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="gray" title="">
                                                             <backgroundConfiguration key="background" cornerRadius="0.0"/>
+                                                            <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
                                                         <connections>
                                                             <segue destination="qD0-L3-AEx" kind="presentation" identifier="zona" modalPresentationStyle="fullScreen" id="P7D-gn-x0f"/>
@@ -70,6 +73,7 @@
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="gray">
                                                             <backgroundConfiguration key="background" cornerRadius="0.0"/>
+                                                            <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
                                                         <connections>
                                                             <segue destination="qD0-L3-AEx" kind="presentation" identifier="zona" modalPresentationStyle="fullScreen" id="bIZ-sy-KwJ"/>
@@ -80,6 +84,7 @@
                                         </subviews>
                                     </stackView>
                                 </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="CZO-ji-CJM" firstAttribute="top" secondItem="h0y-9M-VBm" secondAttribute="top" id="0ze-Et-qbR"/>
@@ -106,6 +111,9 @@
                                         <buttonConfiguration key="configuration" style="plain">
                                             <backgroundConfiguration key="background" image="iconapreferiti"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="OdR-RE-86T" kind="show" id="w6b-uf-nE0"/>
+                                        </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="M1z-er-M0Y">
                                         <rect key="frame" x="134.5" y="25" width="145.5" height="50"/>
@@ -296,7 +304,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pGi-NM-kWz" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="right" id="XCh-jh-TgU"/>
             </objects>
-            <point key="canvasLocation" x="1045" y="62"/>
+            <point key="canvasLocation" x="1129" y="61"/>
         </scene>
         <!--Filtri Controller-->
         <scene sceneID="tL8-Nv-FdT">
@@ -449,10 +457,75 @@
             </objects>
             <point key="canvasLocation" x="2217" y="62"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="HI3-lM-JeY">
+            <objects>
+                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="OdR-RE-86T" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iGq-Hl-wul">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qjE-i5-S3N">
+                                <rect key="frame" x="0.0" y="44" width="414" height="100"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eS2-68-nYq">
+                                        <rect key="frame" x="24" y="32.5" width="40" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="96s-HU-Eh4"/>
+                                            <constraint firstAttribute="height" constant="35" id="9FK-O2-m2S"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <backgroundConfiguration key="background" image="iconafrecciaback" imageContentMode="scaleAspectFit"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="Xg2-vD-vST"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="P R E F E R I T I" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="klf-MA-KaY">
+                                        <rect key="frame" x="107" y="33.5" width="200" height="33"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="ioQ-GP-KNB"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="27"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="klf-MA-KaY" firstAttribute="centerY" secondItem="qjE-i5-S3N" secondAttribute="centerY" id="0MG-BP-Xdu"/>
+                                    <constraint firstItem="eS2-68-nYq" firstAttribute="centerY" secondItem="qjE-i5-S3N" secondAttribute="centerY" id="MHJ-eU-9Jy"/>
+                                    <constraint firstItem="klf-MA-KaY" firstAttribute="centerX" secondItem="qjE-i5-S3N" secondAttribute="centerX" id="llF-Zy-rGd"/>
+                                    <constraint firstAttribute="height" constant="100" id="mca-ma-bnv"/>
+                                    <constraint firstItem="eS2-68-nYq" firstAttribute="leading" secondItem="qjE-i5-S3N" secondAttribute="leading" constant="24" id="xzJ-ah-Uva"/>
+                                </constraints>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sc8-1s-n9q">
+                                <rect key="frame" x="0.0" y="144" width="414" height="752"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Gn0-CU-anz"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Sc8-1s-n9q" secondAttribute="bottom" id="01U-uY-juv"/>
+                            <constraint firstItem="Sc8-1s-n9q" firstAttribute="trailing" secondItem="Gn0-CU-anz" secondAttribute="trailing" id="2g0-OF-rPT"/>
+                            <constraint firstItem="qjE-i5-S3N" firstAttribute="trailing" secondItem="Gn0-CU-anz" secondAttribute="trailing" id="5XD-bg-Qbv"/>
+                            <constraint firstItem="Sc8-1s-n9q" firstAttribute="leading" secondItem="Gn0-CU-anz" secondAttribute="leading" id="P6s-8u-Nx6"/>
+                            <constraint firstItem="qjE-i5-S3N" firstAttribute="leading" secondItem="Gn0-CU-anz" secondAttribute="leading" id="QUO-7l-P55"/>
+                            <constraint firstItem="Sc8-1s-n9q" firstAttribute="top" secondItem="qjE-i5-S3N" secondAttribute="bottom" id="gcn-lK-cK7"/>
+                            <constraint firstItem="qjE-i5-S3N" firstAttribute="top" secondItem="Gn0-CU-anz" secondAttribute="top" id="iUv-PP-HQk"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="gW3-Qt-Kr6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="er1-eG-yWf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="843" y="-632"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="Xvk-Oj-qWt"/>
-        <segue reference="0zm-Nb-dAd"/>
+        <segue reference="Xg2-vD-vST"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Iconaorologio" width="114" height="117"/>

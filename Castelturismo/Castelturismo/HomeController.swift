@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class HomeController: UIViewController {
 
     @IBOutlet public var zona1 : UIButton!
     @IBOutlet public var zona2 : UIButton!
