@@ -13,12 +13,26 @@ class ZonaController: UIViewController {
     var dimoreView : [View]? = nil
     var idZona : Int = 0
     
+    @IBOutlet weak var logoZona: UIImageView!
     @IBOutlet weak var pageControl: UIPageControl!
     @IBOutlet weak var scrollView: UIScrollView!
 	@IBOutlet weak var loadingSpinner: UIActivityIndicatorView!
 	
 	override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if idZona == 1 {
+            logoZona.image = UIImage(named: "iconapiazzagiorgione")
+        }
+        else if idZona == 2 {
+            logoZona.image = UIImage(named: "iconacorso29")
+        }
+        else if idZona == 3 {
+            logoZona.image = UIImage(named: "iconatramura")
+        }
+        else if idZona == 4 {
+            logoZona.image = UIImage(named: "iconaborgotreviso")
+        }
         
         let downloadZona = DownloadJSON(method: onFinishZona(zona:))
         downloadZona.getJSONzona(from: idZona)
@@ -28,52 +42,40 @@ class ZonaController: UIViewController {
     }
 	
     func onFinishZona(zona: Zona) -> Void {
-		DispatchQueue.main.async {
-			self.loadingSpinner.isHidden = true
+		DispatchQueue.main.async { [self] in
+			loadingSpinner.isHidden = true
+            let countDimore = zona.getCountDimore()
+            scrollView.frame = CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height)
+            scrollView.contentSize = CGSize(width: view.frame.width * CGFloat(countDimore), height: view.frame.height)
+            scrollView.isPagingEnabled = true
+            pageControl.numberOfPages = countDimore
 		}
         
         // scarico tutte le copertine delle varie dimore
 		dimoreView = []
 		
 		let downloadCopertina = DownloadIMG(method: onFinishCopertina(foto:))
-		for dim in zona.dimore {
-            let path = dim.getPathCopertina()
+        let dimore = zona.getDimore()
+		for dimora in dimore {
+            let path = dimora.getPathCopertina()
 			if path != "" {
 				downloadCopertina.getIMG(from: path)
 			}
         }
         
-		// PROBLEMA: task eseguita prima dello scaricamento di tutte le immagini
-		DispatchQueue.main.asyncAfter(deadline: .now() + 2, execute: {
-			print(self.dimoreView!.count)
+		DispatchQueue.main.asyncAfter(deadline: .now(), execute: {
 			self.view.bringSubviewToFront(self.pageControl)
-			self.setupScrollView(dimore: self.dimoreView!)
-			
-			self.pageControl.numberOfPages = self.dimoreView!.count
 			self.pageControl.currentPage = 0
-			
 		})
     }
     
-    func setupScrollView(dimore: [View]) {
-        
-        DispatchQueue.main.async { [self] in
-            scrollView.frame = CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height)
-            scrollView.contentSize = CGSize(width: view.frame.width * CGFloat(dimore.count), height: view.frame.height)
-            scrollView.isPagingEnabled = true
-            
-            for i in 0 ..< dimore.count {
-                dimore[i].frame = CGRect(x: view.frame.width * CGFloat(i), y: 0, width: view.frame.width, height: view.frame.height)
-                scrollView.addSubview(dimore[i])
-            }
-        }
-    }
-    
     func onFinishCopertina(foto: Data) -> Void {
-		DispatchQueue.main.async {
+		DispatchQueue.main.async { [self] in
 			let v = Bundle.main.loadNibNamed("View", owner: self, options: nil)?.first as! View
 			v.copertina.image = UIImage(data: foto)
-			self.dimoreView?.append(v)
+            let i = scrollView.subviews.count
+            v.frame = CGRect(x: view.frame.width * CGFloat(i), y: 0, width: view.frame.width, height: view.frame.height)
+            scrollView.addSubview(v)
 		}
     }
 }

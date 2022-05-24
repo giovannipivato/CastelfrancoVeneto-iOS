@@ -12,6 +12,46 @@ public class Zona : Codable {
     public var id : Int
     public var descrizione : Descrizione?
     public var dimore : Array<Dimora>
+    
+    public func getDimore() -> Array<Dimora> {
+        var monumenti : Array<Dimora> = []
+        for dimora in dimore {
+            if dimora.tipologia != "Bar" || dimora.tipologia != "Ristorante" {
+                monumenti.append(dimora)
+            }
+        }
+        return monumenti
+    }
+    
+    public func getBar() -> Array<Dimora> {
+        var bar : Array<Dimora> = []
+        for dimora in dimore {
+            if dimora.tipologia == "Bar" || dimora.tipologia == "Ristorante" {
+                bar.append(dimora)
+            }
+        }
+        return bar
+    }
+    
+    public func getCountDimore() -> Int {
+        var n = 0
+        for dimora in dimore {
+            if dimora.tipologia != "Bar" || dimora.tipologia != "Ristorante" {
+                n += 1
+            }
+        }
+        return n
+    }
+    
+    public func getCountBar() -> Int {
+        var n = 0
+        for dimora in dimore {
+            if dimora.tipologia == "Bar" || dimora.tipologia == "Ristorante" {
+                n += 1
+            }
+        }
+        return n
+    }
 }
 
 /*public struct Zona : Codable {

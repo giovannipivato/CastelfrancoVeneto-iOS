@@ -269,8 +269,8 @@
                                             <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="V7e-3e-Abb"/>
                                         </connections>
                                     </button>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SbZ-Eg-nhH">
-                                        <rect key="frame" x="118" y="14.5" width="178" height="71"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SbZ-Eg-nhH">
+                                        <rect key="frame" x="83" y="1" width="248" height="99"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="178" id="2As-t0-zSi"/>
                                             <constraint firstAttribute="height" constant="71" id="ENb-p9-C2Q"/>
@@ -303,6 +303,7 @@
                     <navigationItem key="navigationItem" id="FBF-qt-fgm"/>
                     <connections>
                         <outlet property="loadingSpinner" destination="xMr-Jb-Exq" id="rDM-s4-K33"/>
+                        <outlet property="logoZona" destination="SbZ-Eg-nhH" id="NMS-3o-yDD"/>
                         <outlet property="pageControl" destination="LZS-oG-4fd" id="DMp-he-EUp"/>
                         <outlet property="scrollView" destination="Rmi-tw-ySq" id="zmx-M7-RCJ"/>
                     </connections>
@@ -310,7 +311,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pGi-NM-kWz" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="right" id="XCh-jh-TgU"/>
             </objects>
-            <point key="canvasLocation" x="1129" y="61"/>
+            <point key="canvasLocation" x="1128.985507246377" y="60.9375"/>
         </scene>
         <!--Filtri Controller-->
         <scene sceneID="tL8-Nv-FdT">
@@ -538,7 +539,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Xvk-Oj-qWt"/>
+        <segue reference="bIZ-sy-KwJ"/>
         <segue reference="V7e-3e-Abb"/>
     </inferredMetricsTieBreakers>
     <resources>
