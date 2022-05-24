@@ -27,7 +27,7 @@
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <connections>
                 <outlet property="btnScopri" destination="5jx-p6-5nZ" id="7Ag-h9-J2S"/>
                 <outlet property="copertina" destination="aOg-fa-zqB" id="mCT-ck-4Z3"/>

@@ -239,12 +239,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="xMr-Jb-Exq">
+                                <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                            </activityIndicatorView>
                             <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="LZS-oG-4fd">
                                 <rect key="frame" x="50" y="709" width="314" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </pageControl>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rmi-tw-ySq">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rmi-tw-ySq">
                                 <rect key="frame" x="0.0" y="152" width="414" height="583"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <viewLayoutGuide key="contentLayoutGuide" id="VUe-a0-f9a"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="sPS-Ra-c3H"/>
                             </scrollView>
@@ -287,9 +291,10 @@
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="eR0-pC-XIq" firstAttribute="leading" secondItem="jtX-8c-KlA" secondAttribute="leading" id="1nH-tw-HeM"/>
+                            <constraint firstItem="xMr-Jb-Exq" firstAttribute="centerY" secondItem="jtX-8c-KlA" secondAttribute="centerY" id="6VL-CE-CDa"/>
                             <constraint firstItem="eR0-pC-XIq" firstAttribute="top" secondItem="AFX-gL-Y3F" secondAttribute="top" id="CIq-61-1Qk"/>
-                            <constraint firstItem="Rmi-tw-ySq" firstAttribute="trailing" secondItem="AFX-gL-Y3F" secondAttribute="trailing" id="ayo-r0-7mN"/>
                             <constraint firstAttribute="trailing" secondItem="eR0-pC-XIq" secondAttribute="trailing" id="grp-uz-u6m"/>
+                            <constraint firstItem="xMr-Jb-Exq" firstAttribute="centerX" secondItem="jtX-8c-KlA" secondAttribute="centerX" id="kha-rG-dgV"/>
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="XCh-jh-TgU" appends="YES" id="2Zo-0J-AhX"/>
@@ -297,6 +302,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="FBF-qt-fgm"/>
                     <connections>
+                        <outlet property="loadingSpinner" destination="xMr-Jb-Exq" id="rDM-s4-K33"/>
                         <outlet property="pageControl" destination="LZS-oG-4fd" id="DMp-he-EUp"/>
                         <outlet property="scrollView" destination="Rmi-tw-ySq" id="zmx-M7-RCJ"/>
                     </connections>
@@ -457,14 +463,17 @@
             </objects>
             <point key="canvasLocation" x="2217" y="62"/>
         </scene>
-        <!--View Controller-->
+        <!--Favorites Controller-->
         <scene sceneID="HI3-lM-JeY">
             <objects>
-                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="OdR-RE-86T" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="OdR-RE-86T" customClass="FavoritesController" customModule="Castelturismo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iGq-Hl-wul">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="k9g-Xe-E3d">
+                                <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                            </activityIndicatorView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qjE-i5-S3N">
                                 <rect key="frame" x="0.0" y="44" width="414" height="100"/>
                                 <subviews>
@@ -510,22 +519,27 @@
                             <constraint firstAttribute="bottom" secondItem="Sc8-1s-n9q" secondAttribute="bottom" id="01U-uY-juv"/>
                             <constraint firstItem="Sc8-1s-n9q" firstAttribute="trailing" secondItem="Gn0-CU-anz" secondAttribute="trailing" id="2g0-OF-rPT"/>
                             <constraint firstItem="qjE-i5-S3N" firstAttribute="trailing" secondItem="Gn0-CU-anz" secondAttribute="trailing" id="5XD-bg-Qbv"/>
+                            <constraint firstItem="k9g-Xe-E3d" firstAttribute="centerX" secondItem="iGq-Hl-wul" secondAttribute="centerX" id="Dgn-Di-Utl"/>
                             <constraint firstItem="Sc8-1s-n9q" firstAttribute="leading" secondItem="Gn0-CU-anz" secondAttribute="leading" id="P6s-8u-Nx6"/>
                             <constraint firstItem="qjE-i5-S3N" firstAttribute="leading" secondItem="Gn0-CU-anz" secondAttribute="leading" id="QUO-7l-P55"/>
+                            <constraint firstItem="k9g-Xe-E3d" firstAttribute="centerY" secondItem="iGq-Hl-wul" secondAttribute="centerY" id="Qts-0X-R8Z"/>
                             <constraint firstItem="Sc8-1s-n9q" firstAttribute="top" secondItem="qjE-i5-S3N" secondAttribute="bottom" id="gcn-lK-cK7"/>
                             <constraint firstItem="qjE-i5-S3N" firstAttribute="top" secondItem="Gn0-CU-anz" secondAttribute="top" id="iUv-PP-HQk"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="gW3-Qt-Kr6"/>
+                    <connections>
+                        <outlet property="loadingSpinner" destination="k9g-Xe-E3d" id="Vmk-Cu-N27"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="er1-eG-yWf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="843" y="-632"/>
+            <point key="canvasLocation" x="842.02898550724649" y="-632.14285714285711"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="Xvk-Oj-qWt"/>
-        <segue reference="Xg2-vD-vST"/>
+        <segue reference="V7e-3e-Abb"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Iconaorologio" width="114" height="117"/>

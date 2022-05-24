@@ -11,6 +11,7 @@
 		5B6E62C0283A3D8D00449CD3 /* config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6E62BF283A3D8D00449CD3 /* config.swift */; };
 		5B6E62C2283A433A00449CD3 /* FiltriController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6E62C1283A433A00449CD3 /* FiltriController.swift */; };
 		5B6E62C4283A4B1700449CD3 /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6E62C3283A4B1700449CD3 /* Filter.swift */; };
+		5B6E62C6283AC3F700449CD3 /* FavoritesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6E62C5283AC3F700449CD3 /* FavoritesController.swift */; };
 		5BEB01BA283A37E1000D2A15 /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEB01B7283A3768000D2A15 /* extensions.swift */; };
 		DB24601B27FD75E700D11B92 /* Descrizione.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB24601A27FD75E700D11B92 /* Descrizione.swift */; };
 		DB27FFCC27F5816C0018DDF5 /* DownloadIMG.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB27FFCB27F5816C0018DDF5 /* DownloadIMG.swift */; };
@@ -55,6 +56,7 @@
 		5B6E62BF283A3D8D00449CD3 /* config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = config.swift; sourceTree = "<group>"; };
 		5B6E62C1283A433A00449CD3 /* FiltriController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltriController.swift; sourceTree = "<group>"; };
 		5B6E62C3283A4B1700449CD3 /* Filter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
+		5B6E62C5283AC3F700449CD3 /* FavoritesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesController.swift; sourceTree = "<group>"; };
 		5BEB01B7283A3768000D2A15 /* extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
 		DB24601A27FD75E700D11B92 /* Descrizione.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Descrizione.swift; sourceTree = "<group>"; };
 		DB27FFCB27F5816C0018DDF5 /* DownloadIMG.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadIMG.swift; sourceTree = "<group>"; };
@@ -163,6 +165,7 @@
 				DB88B83A27F4CDC600DE76CD /* Info.plist */,
 				5B654FC8283997E500C4ACEB /* ItinerariController.swift */,
 				5B6E62C1283A433A00449CD3 /* FiltriController.swift */,
+				5B6E62C5283AC3F700449CD3 /* FavoritesController.swift */,
 			);
 			path = Castelturismo;
 			sourceTree = "<group>";
@@ -339,6 +342,7 @@
 				DB88B80527F43D3B00DE76CD /* SceneDelegate.swift in Sources */,
 				DB88B83427F4491000DE76CD /* Dimora.swift in Sources */,
 				DB88B83827F473B000DE76CD /* Foto.swift in Sources */,
+				5B6E62C6283AC3F700449CD3 /* FavoritesController.swift in Sources */,
 				DB7114E02805973800EA478D /* View.swift in Sources */,
 				DBC7630D27F6144F000D1642 /* ZonaController.swift in Sources */,
 				DB27FFCC27F5816C0018DDF5 /* DownloadIMG.swift in Sources */,

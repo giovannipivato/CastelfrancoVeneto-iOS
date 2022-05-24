@@ -10,48 +10,49 @@ import SwiftUI
 
 class ZonaController: UIViewController {
     
-    var dimore : [View]? = nil
+    var dimoreView : [View]? = nil
     var idZona : Int = 0
     
     @IBOutlet weak var pageControl: UIPageControl!
     @IBOutlet weak var scrollView: UIScrollView!
-    
-    override func viewDidLoad() {
+	@IBOutlet weak var loadingSpinner: UIActivityIndicatorView!
+	
+	override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        
-        // creo l'oggetto della async task dandogli un metodo da eseguire a parsing effettuato
-        // la zona 2 (corso 29 aprile) ha un problema nel parsing, infatti l'oggetto zona risulta nullo
-        // quando si entra in questa view la percentuale di cpu usata scende a 0% e quando si chiude l'app in console
-        // viene scritto "terminated due to signal 9"
-        // spero che riesca a trovare cosa non va
-        // grazie mille e mi scusi per il fastidio
         
         let downloadZona = DownloadJSON(method: onFinishZona(zona:))
         downloadZona.getJSONzona(from: idZona)
+		scrollView.delegate = self
+		
+		// TODO: change page when clicking on points of page controller
     }
-    
+	
     func onFinishZona(zona: Zona) -> Void {
-        print(zona.descrizione.it ?? "prova")
-        print("numero di dimore: " + String(zona.dimore.count))
+		DispatchQueue.main.async {
+			self.loadingSpinner.isHidden = true
+		}
         
         // scarico tutte le copertine delle varie dimore
-        
-        dimore = []
-        
-        /*for dim in zona.monumenti! {
-            let downloadCopertina = DownloadIMG(method: onFinishCopertina(foto:))
+		dimoreView = []
+		
+		let downloadCopertina = DownloadIMG(method: onFinishCopertina(foto:))
+		for dim in zona.dimore {
             let path = dim.getPathCopertina()
-            downloadCopertina.getIMG(from: path)
+			if path != "" {
+				downloadCopertina.getIMG(from: path)
+			}
         }
         
-        DispatchQueue.main.async { [self] in
-            // view.bringSubviewToFront(pageControl)
-            setupScrollView(dimore: dimore!)
-            
-            pageControl.numberOfPages = dimore!.count
-            pageControl.currentPage = 0
-        }*/
+		// PROBLEMA: task eseguita prima dello scaricamento di tutte le immagini
+		DispatchQueue.main.asyncAfter(deadline: .now() + 2, execute: {
+			print(self.dimoreView!.count)
+			self.view.bringSubviewToFront(self.pageControl)
+			self.setupScrollView(dimore: self.dimoreView!)
+			
+			self.pageControl.numberOfPages = self.dimoreView!.count
+			self.pageControl.currentPage = 0
+			
+		})
     }
     
     func setupScrollView(dimore: [View]) {
@@ -69,15 +70,20 @@ class ZonaController: UIViewController {
     }
     
     func onFinishCopertina(foto: Data) -> Void {
-        let v = Bundle.main.loadNibNamed("View", owner: self, options: nil)?.first as! View
-        v.copertina.image = UIImage(data: foto)
-        dimore?.append(v)
+		DispatchQueue.main.async {
+			let v = Bundle.main.loadNibNamed("View", owner: self, options: nil)?.first as! View
+			v.copertina.image = UIImage(data: foto)
+			self.dimoreView?.append(v)
+		}
     }
 }
 
 extension ZonaController: UIScrollViewDelegate {
+	// update pageControl when scrollView change page
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let pageIndex = round(scrollView.contentOffset.x/view.frame.width)
         pageControl.currentPage = Int(pageIndex)
     }
 }
+
+
