@@ -10,7 +10,7 @@ import Foundation
 public class Zona : Codable {
     
     public var id : Int
-    public var descrizione : Descrizione?
+    public var descrizione : String?
     public var dimore : Array<Dimora>
     
     public func getDimore() -> Array<Dimora> {

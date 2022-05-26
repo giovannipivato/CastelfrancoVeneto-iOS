@@ -10,10 +10,10 @@ import Foundation
 public class Dimora : Codable {
     
     public var id : Int
-    public var zona : Int?
+    public var zona : String?
     public var via : String
     public var numero : String
-    public var descrizione : Descrizione?
+    public var descrizione : String? // temp fix
     public var tipologia : String
     public var foto : Array<Foto>
     

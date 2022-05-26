@@ -62,7 +62,7 @@ class ZonaController: UIViewController {
 				downloadCopertina.getIMG(from: path)
 			}
         }
-        
+		
 		DispatchQueue.main.asyncAfter(deadline: .now(), execute: {
 			self.view.bringSubviewToFront(self.pageControl)
 			self.pageControl.currentPage = 0

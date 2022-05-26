@@ -11,6 +11,7 @@ public class Descrizione : Codable {
     
     public var it : String? = nil
     public var en : String? = nil
+	
 }
 
 /*public struct Descrizione : Codable {

@@ -23,6 +23,8 @@ public class DownloadIMG {
         getData(from: url) { data, response, error in
             guard let data = data, error == nil else { return }
             
+			
+			
             self.onFinish(data)
         }
     }
