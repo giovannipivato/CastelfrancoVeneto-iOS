@@ -54,12 +54,12 @@ class ZonaController: UIViewController {
         // scarico tutte le copertine delle varie dimore
 		dimoreView = []
 		
-		let downloadCopertina = DownloadIMG(method: onFinishCopertina(foto:))
+		let downloadCopertina = DownloadIMG(method: {data in print("")})
         let dimore = zona.getDimore()
 		for dimora in dimore {
             let path = dimora.getPathCopertina()
 			if path != "" {
-				downloadCopertina.getIMG(from: path)
+				downloadCopertina.getDimoraImg(from: path, relatedDimora: dimora, onFinish: onFinishCopertina(foto: relatedDimora:))
 			}
         }
 		
@@ -69,15 +69,27 @@ class ZonaController: UIViewController {
 		})
     }
     
-    func onFinishCopertina(foto: Data) -> Void {
+	func onFinishCopertina(foto: Data, relatedDimora: Dimora) -> Void {
 		DispatchQueue.main.async { [self] in
 			let v = Bundle.main.loadNibNamed("View", owner: self, options: nil)?.first as! View
 			v.copertina.image = UIImage(data: foto)
+			v.setDimora(dimora: relatedDimora)
+			v.delegate = self
+			
             let i = scrollView.subviews.count
             v.frame = CGRect(x: view.frame.width * CGFloat(i), y: 0, width: view.frame.width, height: view.frame.height)
             scrollView.addSubview(v)
 		}
     }
+	
+	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+		if segue.identifier == "introDimora" {
+			let destionationVC = segue.destination as! IntroDimoraController
+			let senderView = sender as! View
+			destionationVC.dimora = senderView.dimora
+			destionationVC.idZona = self.idZona
+		}
+	}
 }
 
 extension ZonaController: UIScrollViewDelegate {
@@ -88,4 +100,8 @@ extension ZonaController: UIScrollViewDelegate {
     }
 }
 
-
+extension ZonaController: DimoraViewDelegate {
+	func onButtonPress(sender: Any?) {
+		performSegue(withIdentifier: "introDimora", sender: sender)
+	}
+}

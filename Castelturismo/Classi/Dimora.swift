@@ -12,6 +12,7 @@ public class Dimora : Codable {
     public var id : Int
     public var zona : String?
     public var via : String
+	public var nome: String
     public var numero : String
     public var descrizione : String? // temp fix
     public var tipologia : String

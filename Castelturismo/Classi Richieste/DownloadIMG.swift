@@ -12,22 +12,31 @@ public class DownloadIMG {
     
     private var onFinish: (Data) -> Void
     
-    public init(method: @escaping (Data) -> Void) {
+	public init(method: @escaping (Data) -> Void) {
         self.onFinish = method
     }
     
-    public func getIMG(from link: String) {
+	public func getIMG(from link: String) {
         
         let url = URL(string: link)!
         
         getData(from: url) { data, response, error in
             guard let data = data, error == nil else { return }
             
-			
-			
-            self.onFinish(data)
+			self.onFinish(data)
         }
     }
+	
+	public func getDimoraImg(from link: String, relatedDimora: Dimora, onFinish: @escaping (Data, Dimora) -> Void) {
+		
+		let url = URL(string: link)!
+  
+		getData(from: url) { data, response, error in
+			guard let data = data, error == nil else { return }
+		  
+			onFinish(data, relatedDimora)
+		}
+	}
     
     private func getData(from url: URL, completion: @escaping (Data?, URLResponse?, Error?) -> ()) {
         URLSession.shared.dataTask(with: url, completionHandler: completion).resume()
