@@ -61,10 +61,9 @@ class ZonaController: UIViewController {
         }
         else {
             let downloadFiltri = DownloadJSON(method: onFinishFiltri(data:))
-            downloadFiltri.getJSONfiltri(from: filtriStr)
+            downloadFiltri.getJSONdimoreFiltri(from: filtriStr)
         }
         
-		
 		DispatchQueue.main.asyncAfter(deadline: .now(), execute: {
 			self.view.bringSubviewToFront(self.pageControl)
 			self.pageControl.currentPage = 0

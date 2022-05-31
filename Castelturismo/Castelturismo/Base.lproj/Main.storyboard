@@ -759,12 +759,10 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="8M1-Kg-pjL"/>
         <segue reference="f9K-Sh-S7e"/>
-        <segue reference="bIZ-sy-KwJ"/>
-        <segue reference="31b-oQ-CV6"/>
-        <segue reference="ImQ-CG-cOZ"/>
         <segue reference="T3G-zA-u1V"/>
-        <segue reference="0zm-Nb-dAd"/>
+        <segue reference="31b-oQ-CV6"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Iconaorologio" width="114" height="117"/>

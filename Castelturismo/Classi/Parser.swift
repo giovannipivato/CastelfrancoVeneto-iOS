@@ -23,8 +23,17 @@ public class Parser {
     public static func getDimoreFiltri(from json : Data) -> [Dimora]? {
         do {
             let dimore = try JSONDecoder().decode([Dimora].self, from: json)
-            print(dimore.count)
             return dimore
+        } catch {
+            print(error)
+            return nil
+        }
+    }
+    
+    public static func getFiltri(from json : Data) -> [Filtro]? {
+        do {
+            let filtri = try JSONDecoder().decode([Filtro].self, from: json)
+            return filtri
         } catch {
             print(error)
             return nil
