@@ -18,7 +18,7 @@
                             <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="h0y-9M-VBm">
                                 <rect key="frame" x="50" y="189.5" width="314" height="517"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CZO-ji-CJM">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CZO-ji-CJM">
                                         <rect key="frame" x="0.0" y="0.0" width="314" height="517"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -193,6 +193,9 @@
                                                 <integer key="value" value="1"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="hFN-dv-fxD" kind="show" id="qcA-M3-xUc"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -449,6 +452,74 @@
             </objects>
             <point key="canvasLocation" x="22" y="844"/>
         </scene>
+        <!--Credits Controller-->
+        <scene sceneID="rI4-TU-zhv">
+            <objects>
+                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="hFN-dv-fxD" customClass="CreditsController" customModule="Castelturismo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kBo-uf-vmY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xm3-Z2-eKb">
+                                <rect key="frame" x="0.0" y="44" width="414" height="100"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZIj-53-YEx">
+                                        <rect key="frame" x="24" y="32.5" width="40" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="9aV-4Q-Ab0"/>
+                                            <constraint firstAttribute="width" constant="40" id="ZDQ-Vu-qe2"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <backgroundConfiguration key="background" image="iconafrecciaback" imageContentMode="scaleAspectFit"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="31b-oQ-CV6"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="C R E D I T S" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MzW-X7-dFk">
+                                        <rect key="frame" x="107" y="33.5" width="200" height="33"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="b9g-N3-Wki"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="27"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="MzW-X7-dFk" firstAttribute="centerX" secondItem="xm3-Z2-eKb" secondAttribute="centerX" id="VaJ-oP-iZN"/>
+                                    <constraint firstAttribute="height" constant="100" id="bMd-fu-uPw"/>
+                                    <constraint firstItem="MzW-X7-dFk" firstAttribute="centerY" secondItem="xm3-Z2-eKb" secondAttribute="centerY" id="d3g-i6-ysJ"/>
+                                    <constraint firstItem="ZIj-53-YEx" firstAttribute="centerY" secondItem="xm3-Z2-eKb" secondAttribute="centerY" id="oYL-m9-TEe"/>
+                                    <constraint firstItem="ZIj-53-YEx" firstAttribute="leading" secondItem="xm3-Z2-eKb" secondAttribute="leading" constant="24" id="og4-ge-k70"/>
+                                </constraints>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xMk-87-gVs">
+                                <rect key="frame" x="20" y="144" width="374" height="752"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="OW5-Nv-sm8"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xm3-Z2-eKb" firstAttribute="leading" secondItem="OW5-Nv-sm8" secondAttribute="leading" id="TEI-fL-XF2"/>
+                            <constraint firstItem="xMk-87-gVs" firstAttribute="leading" secondItem="OW5-Nv-sm8" secondAttribute="leading" constant="20" id="epN-nF-OnM"/>
+                            <constraint firstItem="xMk-87-gVs" firstAttribute="trailing" secondItem="OW5-Nv-sm8" secondAttribute="trailing" constant="-20" id="h35-VJ-t2t"/>
+                            <constraint firstItem="xm3-Z2-eKb" firstAttribute="trailing" secondItem="OW5-Nv-sm8" secondAttribute="trailing" id="lp0-Ze-nXz"/>
+                            <constraint firstItem="xm3-Z2-eKb" firstAttribute="top" secondItem="OW5-Nv-sm8" secondAttribute="top" id="rBf-wT-5Br"/>
+                            <constraint firstItem="xMk-87-gVs" firstAttribute="top" secondItem="xm3-Z2-eKb" secondAttribute="bottom" id="sKa-RA-1ro"/>
+                            <constraint firstAttribute="bottom" secondItem="xMk-87-gVs" secondAttribute="bottom" id="uLh-N7-Pbs"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="KFe-Mr-CdQ"/>
+                    <connections>
+                        <outlet property="scrollView" destination="xMk-87-gVs" id="vVa-S3-dIX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EHR-c5-Uvg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1128.985507246377" y="843.75"/>
+        </scene>
         <!--Intro Dimora Controller-->
         <scene sceneID="PAK-WE-9H7">
             <objects>
@@ -689,8 +760,8 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="f9K-Sh-S7e"/>
-        <segue reference="T3G-zA-u1V"/>
-        <segue reference="V7e-3e-Abb"/>
+        <segue reference="bIZ-sy-KwJ"/>
+        <segue reference="31b-oQ-CV6"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Iconaorologio" width="114" height="117"/>
