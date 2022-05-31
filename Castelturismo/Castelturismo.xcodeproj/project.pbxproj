@@ -13,6 +13,7 @@
 		5B6E62C4283A4B1700449CD3 /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6E62C3283A4B1700449CD3 /* Filter.swift */; };
 		5B6E62C6283AC3F700449CD3 /* FavoritesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6E62C5283AC3F700449CD3 /* FavoritesController.swift */; };
 		5B77A1302843B2E60023243F /* DettaglioDimoraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B77A12F2843B2E60023243F /* DettaglioDimoraController.swift */; };
+		5B9F76CF28469B780096D2EA /* CreditsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9F76CE28469B780096D2EA /* CreditsController.swift */; };
 		5BEB01BA283A37E1000D2A15 /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEB01B7283A3768000D2A15 /* extensions.swift */; };
 		DB1BF8DA2846A517007DBE33 /* Testo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1BF8D92846A517007DBE33 /* Testo.swift */; };
 		DB1BF8DC2846B03F007DBE33 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1BF8DB2846B03F007DBE33 /* Parser.swift */; };
@@ -61,6 +62,7 @@
 		5B6E62C3283A4B1700449CD3 /* Filter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
 		5B6E62C5283AC3F700449CD3 /* FavoritesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesController.swift; sourceTree = "<group>"; };
 		5B77A12F2843B2E60023243F /* DettaglioDimoraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DettaglioDimoraController.swift; sourceTree = "<group>"; };
+		5B9F76CE28469B780096D2EA /* CreditsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsController.swift; sourceTree = "<group>"; };
 		5BEB01B7283A3768000D2A15 /* extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
 		DB1BF8D92846A517007DBE33 /* Testo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Testo.swift; sourceTree = "<group>"; };
 		DB1BF8DB2846B03F007DBE33 /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
@@ -173,6 +175,7 @@
 				5B6E62C1283A433A00449CD3 /* FiltriController.swift */,
 				5B6E62C5283AC3F700449CD3 /* FavoritesController.swift */,
 				5B77A12F2843B2E60023243F /* DettaglioDimoraController.swift */,
+				5B9F76CE28469B780096D2EA /* CreditsController.swift */,
 			);
 			path = Castelturismo;
 			sourceTree = "<group>";
@@ -352,6 +355,7 @@
 				5B77A1302843B2E60023243F /* DettaglioDimoraController.swift in Sources */,
 				DB88B83427F4491000DE76CD /* Dimora.swift in Sources */,
 				DB88B83827F473B000DE76CD /* Foto.swift in Sources */,
+				5B9F76CF28469B780096D2EA /* CreditsController.swift in Sources */,
 				5B6E62C6283AC3F700449CD3 /* FavoritesController.swift in Sources */,
 				DB7114E02805973800EA478D /* View.swift in Sources */,
 				DBC7630D27F6144F000D1642 /* ZonaController.swift in Sources */,

@@ -23,7 +23,7 @@ class HomeController: UIViewController {
         zona3.tag = 3
         zona4.tag = 4
         
-        self.imgZone.image =  UIImage(named: "home.png")!
+        self.imgZone.image =  UIImage(named: "home2.png")!
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
