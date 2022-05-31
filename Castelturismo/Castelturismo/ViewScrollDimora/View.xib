@@ -14,13 +14,13 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aOg-fa-zqB">
-                    <rect key="frame" x="50" y="252" width="314" height="392.5"/>
+                    <rect key="frame" x="30" y="227" width="354" height="442.5"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="aOg-fa-zqB" secondAttribute="height" multiplier="2:2.5" id="5D6-Ne-jkf"/>
                     </constraints>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5jx-p6-5nZ">
-                    <rect key="frame" x="107" y="629.5" width="200" height="50"/>
+                    <rect key="frame" x="107" y="654.5" width="200" height="50"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="5jx-p6-5nZ" secondAttribute="height" multiplier="163:41" id="TXA-1E-S2g"/>
                         <constraint firstAttribute="width" constant="200" id="egh-8Y-V1O"/>
@@ -36,8 +36,8 @@
             <constraints>
                 <constraint firstItem="5jx-p6-5nZ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="28u-zM-LEb"/>
                 <constraint firstItem="aOg-fa-zqB" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="PDf-4V-ZG4"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="aOg-fa-zqB" secondAttribute="trailing" constant="50" id="Vej-IA-Xkn"/>
-                <constraint firstItem="aOg-fa-zqB" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="50" id="jwB-lD-eLn"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="aOg-fa-zqB" secondAttribute="trailing" constant="30" id="Vej-IA-Xkn"/>
+                <constraint firstItem="aOg-fa-zqB" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="30" id="jwB-lD-eLn"/>
                 <constraint firstItem="aOg-fa-zqB" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="rfb-F5-J4B"/>
                 <constraint firstItem="5jx-p6-5nZ" firstAttribute="top" secondItem="aOg-fa-zqB" secondAttribute="bottom" constant="-15" id="vlF-Ak-3og"/>
             </constraints>

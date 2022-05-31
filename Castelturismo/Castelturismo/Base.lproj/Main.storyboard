@@ -241,7 +241,7 @@
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="xMr-Jb-Exq">
                                 <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
                             </activityIndicatorView>
-                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="LZS-oG-4fd">
+                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="LZS-oG-4fd">
                                 <rect key="frame" x="50" y="709" width="314" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </pageControl>
@@ -447,7 +447,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G0j-PB-EXP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="120" y="844"/>
+            <point key="canvasLocation" x="22" y="844"/>
         </scene>
         <!--Intro Dimora Controller-->
         <scene sceneID="PAK-WE-9H7">
@@ -498,7 +498,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6mT-Hd-ICo">
-                                <rect key="frame" x="184.5" y="807" width="45" height="45"/>
+                                <rect key="frame" x="184.5" y="797" width="45" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="6mT-Hd-ICo" secondAttribute="height" id="KUO-Jj-H2K"/>
                                     <constraint firstAttribute="width" constant="45" id="v0j-A2-8hx"/>
@@ -507,6 +507,9 @@
                                 <buttonConfiguration key="configuration" style="plain">
                                     <backgroundConfiguration key="background" image="iconafrecciagiu" imageContentMode="scaleToFill"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="Icc-IL-0f4" kind="show" identifier="dettaglioDimora" id="8M1-Kg-pjL"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descrizione" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QPx-UI-VAU">
                                 <rect key="frame" x="20" y="755.5" width="374" height="21.5"/>
@@ -524,7 +527,7 @@
                         <viewLayoutGuide key="safeArea" id="DRL-zc-1Xl"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="6mT-Hd-ICo" firstAttribute="bottom" secondItem="DRL-zc-1Xl" secondAttribute="bottom" constant="-10" id="0kA-T4-6bN"/>
+                            <constraint firstItem="6mT-Hd-ICo" firstAttribute="bottom" secondItem="DRL-zc-1Xl" secondAttribute="bottom" constant="-20" id="0kA-T4-6bN"/>
                             <constraint firstItem="RTu-Iq-0TW" firstAttribute="leading" secondItem="DRL-zc-1Xl" secondAttribute="leading" id="9NQ-rE-iDh"/>
                             <constraint firstItem="QPx-UI-VAU" firstAttribute="top" secondItem="x0w-bA-Hjj" secondAttribute="bottom" constant="5" id="BCb-42-sX7"/>
                             <constraint firstAttribute="bottom" secondItem="7Ow-tZ-GFj" secondAttribute="bottom" id="BN2-hO-D1A"/>
@@ -537,7 +540,7 @@
                             <constraint firstItem="DRL-zc-1Xl" firstAttribute="trailing" secondItem="x0w-bA-Hjj" secondAttribute="trailing" constant="20" id="e0w-1r-CoA"/>
                             <constraint firstItem="DRL-zc-1Xl" firstAttribute="trailing" secondItem="QPx-UI-VAU" secondAttribute="trailing" constant="20" id="id8-lf-hb2"/>
                             <constraint firstItem="6mT-Hd-ICo" firstAttribute="centerX" secondItem="n9a-YT-S8K" secondAttribute="centerX" id="tBv-rA-VSf"/>
-                            <constraint firstItem="6mT-Hd-ICo" firstAttribute="top" secondItem="QPx-UI-VAU" secondAttribute="bottom" constant="30" id="ueW-AJ-vaI"/>
+                            <constraint firstItem="6mT-Hd-ICo" firstAttribute="top" secondItem="QPx-UI-VAU" secondAttribute="bottom" constant="20" id="ueW-AJ-vaI"/>
                             <constraint firstItem="7Ow-tZ-GFj" firstAttribute="leading" secondItem="DRL-zc-1Xl" secondAttribute="leading" id="xGB-Fo-REj"/>
                         </constraints>
                     </view>
@@ -551,7 +554,64 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xc1-ao-uxg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2215.9420289855075" y="61.607142857142854"/>
+            <point key="canvasLocation" x="2100" y="61"/>
+        </scene>
+        <!--Dettaglio Dimora Controller-->
+        <scene sceneID="WzT-Hr-cDQ">
+            <objects>
+                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="Icc-IL-0f4" customClass="DettaglioDimoraController" customModule="Castelturismo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="u23-jT-Cpe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f9O-5R-HE0">
+                                <rect key="frame" x="20" y="144" width="374" height="752"/>
+                            </scrollView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="byy-zz-IX6">
+                                <rect key="frame" x="0.0" y="44" width="414" height="100"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h4d-Jl-cYA">
+                                        <rect key="frame" x="24" y="32.5" width="40" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="mit-SZ-l8r"/>
+                                            <constraint firstAttribute="height" constant="35" id="vVL-cE-l9n"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <backgroundConfiguration key="background" image="iconafrecciaback" imageContentMode="scaleAspectFit"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="Cjg-fV-vOD" kind="show" identifier="introDimora" id="f9K-Sh-S7e"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="h4d-Jl-cYA" firstAttribute="centerY" secondItem="byy-zz-IX6" secondAttribute="centerY" id="0cd-cy-5J9"/>
+                                    <constraint firstAttribute="height" constant="100" id="9gL-aP-b8M"/>
+                                    <constraint firstItem="h4d-Jl-cYA" firstAttribute="leading" secondItem="byy-zz-IX6" secondAttribute="leading" constant="24" id="u4j-BP-xHk"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="aMn-ZI-uH1"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="f9O-5R-HE0" firstAttribute="trailing" secondItem="aMn-ZI-uH1" secondAttribute="trailing" constant="-20" id="3h6-tl-iHS"/>
+                            <constraint firstAttribute="bottom" secondItem="f9O-5R-HE0" secondAttribute="bottom" id="CtC-JP-ZtG"/>
+                            <constraint firstItem="f9O-5R-HE0" firstAttribute="top" secondItem="byy-zz-IX6" secondAttribute="bottom" id="YnB-xL-GpE"/>
+                            <constraint firstItem="byy-zz-IX6" firstAttribute="top" secondItem="aMn-ZI-uH1" secondAttribute="top" id="aN2-h4-U3n"/>
+                            <constraint firstItem="byy-zz-IX6" firstAttribute="leading" secondItem="aMn-ZI-uH1" secondAttribute="leading" id="col-NW-Aco"/>
+                            <constraint firstItem="f9O-5R-HE0" firstAttribute="leading" secondItem="aMn-ZI-uH1" secondAttribute="leading" constant="20" id="fOU-2D-lw2"/>
+                            <constraint firstItem="byy-zz-IX6" firstAttribute="trailing" secondItem="aMn-ZI-uH1" secondAttribute="trailing" id="vqI-DB-mCe"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="bfq-8O-t7R"/>
+                    <connections>
+                        <outlet property="scrollView" destination="f9O-5R-HE0" id="UDp-8Y-qSX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="75S-63-8pH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3018.840579710145" y="60.9375"/>
         </scene>
         <!--Favorites Controller-->
         <scene sceneID="HI3-lM-JeY">
@@ -624,10 +684,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="er1-eG-yWf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="842.02898550724649" y="-632.14285714285711"/>
+            <point key="canvasLocation" x="1129" y="-716"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="f9K-Sh-S7e"/>
         <segue reference="T3G-zA-u1V"/>
         <segue reference="V7e-3e-Abb"/>
     </inferredMetricsTieBreakers>

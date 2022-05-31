@@ -33,13 +33,6 @@ class IntroDimoraController: UIViewController {
 		
 		titleLabel.numberOfLines = 3
 		descriptionLabel.numberOfLines = 10
-		
-		// button animation
-		DispatchQueue.main.async {
-			UIView.animate(withDuration: 1.0, delay: 0, options: [.repeat, .autoreverse], animations: {
-				self.arrowButton.transform = CGAffineTransform(translationX: 0, y: -25)
-			}, completion: nil)
-		}
     }
 	
 	func showImage(foto: Data) {
@@ -61,6 +54,10 @@ class IntroDimoraController: UIViewController {
 		if segue.identifier == "zona" {
 			let destinationVC = segue.destination as! ZonaController
 			destinationVC.idZona = self.idZona
+		} else if segue.identifier == "dettaglioDimora" {
+			let destinationVC = segue.destination as! DettaglioDimoraController
+			destinationVC.dimora = dimora
+			destinationVC.idZona = idZona
 		}
 	}
 }
