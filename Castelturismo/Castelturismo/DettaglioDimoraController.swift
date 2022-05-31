@@ -54,7 +54,7 @@ class DettaglioDimoraController: UIViewController {
 		// a label and a stackview for the images
 		let descriptionLabel = UILabel()
 		
-		descriptionLabel.text = dimora.descrizione
+        descriptionLabel.text = Testo.getDescrizione(dimora.descrizione ?? "")
 		descriptionLabel.textColor = UIColor.white
 		descriptionLabel.numberOfLines = 999
 		

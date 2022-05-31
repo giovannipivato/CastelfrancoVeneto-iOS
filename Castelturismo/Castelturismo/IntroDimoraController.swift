@@ -26,7 +26,7 @@ class IntroDimoraController: UIViewController {
 		titleLabel.text = dimora.nome
 		
 		// extract first sentence from description
-		let description = dimora.descrizione!
+        let description = Testo.getDescrizione(dimora.descrizione!)
 		let endOfSentence = description.firstIndex(where: {$0 == "."}) ?? description.endIndex
 		let firstSentence = description[..<endOfSentence]
 		descriptionLabel.text = String(firstSentence)

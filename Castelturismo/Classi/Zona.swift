@@ -16,7 +16,7 @@ public class Zona : Codable {
     public func getDimore() -> Array<Dimora> {
         var monumenti : Array<Dimora> = []
         for dimora in dimore {
-            if dimora.tipologia != "Bar" || dimora.tipologia != "Ristorante" {
+            if dimora.tipologia != "Bar" && dimora.tipologia != "Ristorante" && dimora.tipologia != "Albergo" {
                 monumenti.append(dimora)
             }
         }
@@ -36,7 +36,7 @@ public class Zona : Codable {
     public func getCountDimore() -> Int {
         var n = 0
         for dimora in dimore {
-            if dimora.tipologia != "Bar" || dimora.tipologia != "Ristorante" {
+            if dimora.tipologia != "Bar" && dimora.tipologia != "Ristorante" && dimora.tipologia != "Albergo" {
                 n += 1
             }
         }
