@@ -15,6 +15,7 @@
 		5B77A1302843B2E60023243F /* DettaglioDimoraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B77A12F2843B2E60023243F /* DettaglioDimoraController.swift */; };
 		5BEB01BA283A37E1000D2A15 /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEB01B7283A3768000D2A15 /* extensions.swift */; };
 		DB1BF8DA2846A517007DBE33 /* Testo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1BF8D92846A517007DBE33 /* Testo.swift */; };
+		DB1BF8DC2846B03F007DBE33 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1BF8DB2846B03F007DBE33 /* Parser.swift */; };
 		DB24601B27FD75E700D11B92 /* Descrizione.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB24601A27FD75E700D11B92 /* Descrizione.swift */; };
 		DB27FFCC27F5816C0018DDF5 /* DownloadIMG.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB27FFCB27F5816C0018DDF5 /* DownloadIMG.swift */; };
 		DB27FFD027F59E9E0018DDF5 /* DownloadJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB27FFCF27F59E9E0018DDF5 /* DownloadJSON.swift */; };
@@ -62,6 +63,7 @@
 		5B77A12F2843B2E60023243F /* DettaglioDimoraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DettaglioDimoraController.swift; sourceTree = "<group>"; };
 		5BEB01B7283A3768000D2A15 /* extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
 		DB1BF8D92846A517007DBE33 /* Testo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Testo.swift; sourceTree = "<group>"; };
+		DB1BF8DB2846B03F007DBE33 /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
 		DB24601A27FD75E700D11B92 /* Descrizione.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Descrizione.swift; sourceTree = "<group>"; };
 		DB27FFCB27F5816C0018DDF5 /* DownloadIMG.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadIMG.swift; sourceTree = "<group>"; };
 		DB27FFCF27F59E9E0018DDF5 /* DownloadJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadJSON.swift; sourceTree = "<group>"; };
@@ -201,6 +203,7 @@
 				DB24601A27FD75E700D11B92 /* Descrizione.swift */,
 				5B6E62C3283A4B1700449CD3 /* Filter.swift */,
 				DB1BF8D92846A517007DBE33 /* Testo.swift */,
+				DB1BF8DB2846B03F007DBE33 /* Parser.swift */,
 			);
 			path = Classi;
 			sourceTree = "<group>";
@@ -357,6 +360,7 @@
 				DB1BF8DA2846A517007DBE33 /* Testo.swift in Sources */,
 				5B6E62C2283A433A00449CD3 /* FiltriController.swift in Sources */,
 				5B6E62C4283A4B1700449CD3 /* Filter.swift in Sources */,
+				DB1BF8DC2846B03F007DBE33 /* Parser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

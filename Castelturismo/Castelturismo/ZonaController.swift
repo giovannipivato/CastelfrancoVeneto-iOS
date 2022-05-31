@@ -10,7 +10,6 @@ import SwiftUI
 
 class ZonaController: UIViewController {
     
-    var dimoreView : [View]? = nil
     var idZona : Int = 0
     
     @IBOutlet weak var logoZona: UIImageView!
@@ -34,17 +33,19 @@ class ZonaController: UIViewController {
             logoZona.image = UIImage(named: "iconaborgotreviso")
         }
         
-        let downloadZona = DownloadJSON(method: onFinishZona(zona:))
+        let downloadZona = DownloadJSON(method: onFinishZona(data:))
         downloadZona.getJSONzona(from: idZona)
 		scrollView.delegate = self
 		
 		// TODO: change page when clicking on points of page controller
     }
 	
-    func onFinishZona(zona: Zona) -> Void {
+    func onFinishZona(data: Data) -> Void {
+        let zona = Parser.getZona(from: data)
+        
 		DispatchQueue.main.async { [self] in
 			loadingSpinner.isHidden = true
-            let countDimore = zona.getCountDimore()
+            let countDimore = zona!.getCountDimore()
             scrollView.frame = CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height)
             scrollView.contentSize = CGSize(width: view.frame.width * CGFloat(countDimore), height: view.frame.height)
             scrollView.isPagingEnabled = true
@@ -52,16 +53,17 @@ class ZonaController: UIViewController {
 		}
         
         // scarico tutte le copertine delle varie dimore
-		dimoreView = []
 		
-		let downloadCopertina = DownloadIMG(method: {data in print("")})
-        let dimore = zona.getDimore()
-		for dimora in dimore {
-            let path = dimora.getPathCopertina()
-			if path != "" {
-				downloadCopertina.getDimoraImg(from: path, relatedDimora: dimora, onFinish: onFinishCopertina(foto: relatedDimora:))
-			}
+        let filtriStr = Filter.getFiltersStr()
+        print(filtriStr)
+        if filtriStr == "" || filtriStr == "0+1+2+3+4+5" {
+            aggiornaScroll(zona!.getDimore())
         }
+        else {
+            let downloadFiltri = DownloadJSON(method: onFinishFiltri(data:))
+            downloadFiltri.getJSONfiltri(from: filtriStr)
+        }
+        
 		
 		DispatchQueue.main.asyncAfter(deadline: .now(), execute: {
 			self.view.bringSubviewToFront(self.pageControl)
@@ -80,6 +82,21 @@ class ZonaController: UIViewController {
             v.frame = CGRect(x: view.frame.width * CGFloat(i), y: 0, width: view.frame.width, height: view.frame.height)
             scrollView.addSubview(v)
 		}
+    }
+    
+    func onFinishFiltri(data: Data) {
+        let dimore = Parser.getDimoreFiltri(from: data)
+        aggiornaScroll(dimore!)
+    }
+    
+    func aggiornaScroll(_ dimore: Array<Dimora>) {
+        let downloadCopertina = DownloadIMG(method: {data in print("")})
+        for dimora in dimore {
+            let path = dimora.getPathCopertina()
+            if path != "" {
+                downloadCopertina.getDimoraImg(from: path, relatedDimora: dimora, onFinish: onFinishCopertina(foto: relatedDimora:))
+            }
+        }
     }
 	
 	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

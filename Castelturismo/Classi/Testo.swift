@@ -22,6 +22,11 @@ public class Testo {
                 en = String(d.dropFirst(3))
             }
         }
-        return en
+        if en != "" {
+            return en
+        }
+        else {
+            return descrizione
+        }
     }
 }
