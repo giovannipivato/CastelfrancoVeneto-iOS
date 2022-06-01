@@ -39,4 +39,24 @@ public class Parser {
             return nil
         }
     }
+    
+    public static func getPercorsi(from json: Data) -> [Percorso]? {
+        do {
+            let percorsi = try JSONDecoder().decode([Percorso].self, from: json)
+            return percorsi
+        } catch {
+            print(error)
+            return nil
+        }
+    }
+    
+    public static func getPercorso(from json: Data) -> Percorso? {
+        do {
+            let percorso = try JSONDecoder().decode(Percorso.self, from: json)
+            return percorso
+        } catch {
+            print(error)
+            return nil
+        }
+    }
 }

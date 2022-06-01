@@ -78,5 +78,45 @@ public class DownloadJSON {
             self.onFinish(data)
         }.resume()
     }
+    
+    public func getJSONpercorsi() {
+        let link = "http://prolococasteo.altervista.org/index.php/percorsi"
+        print(link)
+        guard let url = URL(string: link) else {
+            return
+        }
+        
+        URLSession.shared.dataTask(with: url) { (data, response, err) in
+            if err != nil {
+                return print(err as Any)
+            }
+            
+            guard let data = data else {
+                return print("error")
+            }
+            
+            self.onFinish(data)
+        }.resume()
+    }
+    
+    public func getJSONpercorso(from id : Int) {
+        let link = "https://prolococasteo.altervista.org/index.php/percorso?id=" + String(id)
+        print(link)
+        guard let url = URL(string: link) else {
+            return
+        }
+        
+        URLSession.shared.dataTask(with: url) { (data, response, err) in
+            if err != nil {
+                return print(err as Any)
+            }
+            
+            guard let data = data else {
+                return print("error")
+            }
+            
+            self.onFinish(data)
+        }.resume()
+    }
 }
 
