@@ -39,7 +39,7 @@ public class DownloadJSON {
     
     public func getJSONdimoreFiltri(from filters: String) {
         
-        let link = "http://prolococasteo.altervista.org/index.php/filtri?filtri=" + filters
+        let link = "https://prolococasteo.altervista.org/index.php/filtro?filtro=" + filters
         print(link)
         guard let url = URL(string: link) else {
             return
