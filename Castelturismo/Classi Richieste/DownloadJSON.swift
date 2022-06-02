@@ -45,21 +45,5 @@ public class DownloadJSON {
 }
 
 
-class Download {
-	static func getJSONZona(id: Int) async throws -> Zona {
-		let link = "http://prolococasteo.altervista.org/index.php/zona?zona=" + String(id)
-		guard let url = URL(string: link) else {
-			fatalError("Invalid url entered")
-		}
-		
-		let (data, _) = try await URLSession.shared.data(from: url)
-		
-		if let zona = try? JSONDecoder().decode(Zona.self, from: data)
-		{
-			return zona
-		} else {
-			fatalError("Error while decoding data")
-		}
-	}
-}
+
 
