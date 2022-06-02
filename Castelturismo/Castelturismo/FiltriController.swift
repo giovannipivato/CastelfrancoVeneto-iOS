@@ -11,29 +11,43 @@ class FiltriController: UIViewController {
 
 	@IBOutlet weak var scrollView: UIScrollView!
 	let scrollStackViewContainer: UIStackView = UIStackView()
-	
-	let filters = ["Edifici religiosi", "Edifici pubblici", "Luoghi d'arte", "Arte e natura", "Visitabili su appuntamento", "I luoghi del Giorgione"]
-	var filtersState: [Filter] = []
+    
+    var filters : [String] = []
+	var filtersState : [Filter] = []
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
+        
+        let downloadFiltri = DownloadJSON(method: onFinishFiltri(data:))
+        downloadFiltri.getJSONfiltri()
 
 		scrollStackViewContainer.axis = .vertical
 		scrollStackViewContainer.spacing = 0
 		scrollStackViewContainer.translatesAutoresizingMaskIntoConstraints = false
 		
-		setupScrollView()
-		setupFilters()
 	}
+    
+    private func onFinishFiltri(data: Data) {
+        let filtri = Parser.getFiltri(from: data)
+        
+        for f in filtri ?? [] {
+            filters.append(Testo.getDescrizione(f.stato))
+        }
+        
+        DispatchQueue.main.async { [self] in
+            setupScrollView()
+            setupFilters()
+        }
+    }
 	
 	private func setupScrollView() {
-		scrollView.addSubview(scrollStackViewContainer)
-		scrollStackViewContainer.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor).isActive = true
-		scrollStackViewContainer.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor).isActive = true
-		scrollStackViewContainer.topAnchor.constraint(equalTo: scrollView.topAnchor).isActive = true
-		scrollStackViewContainer.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor).isActive = true
-		scrollStackViewContainer.widthAnchor.constraint(equalTo: scrollView.widthAnchor).isActive = true
-		scrollStackViewContainer.spacing = 20
+        scrollView.addSubview(scrollStackViewContainer)
+        scrollStackViewContainer.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor).isActive = true
+        scrollStackViewContainer.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor).isActive = true
+        scrollStackViewContainer.topAnchor.constraint(equalTo: scrollView.topAnchor).isActive = true
+        scrollStackViewContainer.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor).isActive = true
+        scrollStackViewContainer.widthAnchor.constraint(equalTo: scrollView.widthAnchor).isActive = true
+        scrollStackViewContainer.spacing = 20
 	}
 	
 	private func setupFilters() {

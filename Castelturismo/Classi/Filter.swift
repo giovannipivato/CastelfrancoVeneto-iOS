@@ -17,15 +17,15 @@ class Filter: Codable {
 	}
 	
 	public static func updateFilter(id: Int, isChecked: Bool) {
-		let filtersData = UserDefaults.standard.data(forKey: "filters")
+        let filtersData = UserDefaults.standard.data(forKey: "filters")
 		
 		var filters = [Filter]()
 		if filtersData != nil {
 			filters = try! JSONDecoder().decode([Filter].self, from: filtersData!)
 		} else {
-			filters = getDefaultFilters()
+            filters = getDefaultFilters()
 		}
-		
+        
 		filters[id].isChecked = isChecked
 		
 		let newFiltersData = try! JSONEncoder().encode(filters)
@@ -45,6 +45,22 @@ class Filter: Codable {
 		
 		return filters
 	}
+    
+    public static func getFiltersStr() -> String {
+        let filters = getFilters()
+        var str = ""
+        for i in 0..<filters.count {
+            if filters[i].isChecked {
+                if str == "" {
+                    str += String(filters[i].id)
+                }
+                else {
+                    str += "+" + String(filters[i].id)
+                }
+            }
+        }
+        return str
+    }
 	
 	public static func getDefaultFilters() -> [Filter] {
 		var filters = [Filter]()

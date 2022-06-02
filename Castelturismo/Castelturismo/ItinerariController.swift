@@ -18,13 +18,28 @@ class ItinerariController: UIViewController {
 		return view
 	}()
 	
-	let itinerari = ["1 ora", "2 ore", "3 ore", "4 ore", "Luoghi di Giorgione", "Luoghi d'arte", "Edifici aperti al pubblico", "Edifici religiosi", "Via riccati e borghi", "Piazza Giorgione", "Dentro le mura", "Corso XXIX aprile"]
+	// let itinerari = ["1 ora", "2 ore", "3 ore", "4 ore", "Luoghi di Giorgione", "Luoghi d'arte", "Edifici aperti al pubblico", "Edifici religiosi", "Via riccati e borghi", "Piazza Giorgione", "Dentro le mura", "Corso XXIX aprile"]
+    var itinerari : [String] = []
 	
 	override func viewDidLoad() {
         super.viewDidLoad()
 
-		setupScrollView()
+        let downloadPercorsi = DownloadJSON(method: onFinishFiltri(data: ))
+        downloadPercorsi.getJSONpercorsi()
+		
 	}
+        
+    private func onFinishFiltri(data: Data) {
+        let percorsi = Parser.getPercorsi(from: data)
+        
+        for p in percorsi ?? [] {
+            itinerari.append(Testo.getDescrizione(p.descrizione))
+        }
+        
+        DispatchQueue.main.async { [self] in
+            setupScrollView()
+        }
+    }
 	
 	private func setupScrollView() {
 		scrollView.addSubview(scrollStackViewContainer)
