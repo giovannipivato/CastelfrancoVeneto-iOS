@@ -244,11 +244,12 @@
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="xMr-Jb-Exq">
                                 <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
                             </activityIndicatorView>
-                            <pageControl hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="LZS-oG-4fd">
+                            <pageControl hidden="YES" opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="LZS-oG-4fd">
                                 <rect key="frame" x="141" y="709" width="132.5" height="26"/>
                             </pageControl>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rmi-tw-ySq">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rmi-tw-ySq">
                                 <rect key="frame" x="0.0" y="152" width="414" height="583"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <viewLayoutGuide key="contentLayoutGuide" id="VUe-a0-f9a"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="sPS-Ra-c3H"/>
                             </scrollView>
@@ -341,19 +342,14 @@
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="eR0-pC-XIq" firstAttribute="leading" secondItem="jtX-8c-KlA" secondAttribute="leading" id="1nH-tw-HeM"/>
-                            <constraint firstItem="Rmi-tw-ySq" firstAttribute="top" secondItem="eR0-pC-XIq" secondAttribute="bottom" constant="8" id="4AG-gX-JXP"/>
                             <constraint firstItem="Yk1-Dc-iuA" firstAttribute="bottom" secondItem="AFX-gL-Y3F" secondAttribute="bottom" id="5wH-RS-aaj"/>
                             <constraint firstItem="xMr-Jb-Exq" firstAttribute="centerY" secondItem="jtX-8c-KlA" secondAttribute="centerY" id="6VL-CE-CDa"/>
                             <constraint firstItem="n6F-Uc-FWI" firstAttribute="trailing" secondItem="eR0-pC-XIq" secondAttribute="trailing" id="6df-oy-myF"/>
                             <constraint firstItem="eR0-pC-XIq" firstAttribute="top" secondItem="AFX-gL-Y3F" secondAttribute="top" id="CIq-61-1Qk"/>
                             <constraint firstItem="Yk1-Dc-iuA" firstAttribute="top" secondItem="LFJ-Iu-ygU" secondAttribute="top" id="DSg-DH-amI"/>
                             <constraint firstItem="n6F-Uc-FWI" firstAttribute="leading" secondItem="LFJ-Iu-ygU" secondAttribute="trailing" constant="8" id="Gx4-jL-waS"/>
-                            <constraint firstItem="n6F-Uc-FWI" firstAttribute="trailing" secondItem="Rmi-tw-ySq" secondAttribute="trailing" id="Jgd-ca-0bi"/>
-                            <constraint firstItem="Yk1-Dc-iuA" firstAttribute="leading" secondItem="Rmi-tw-ySq" secondAttribute="leading" id="KzU-fT-KD9"/>
                             <constraint firstItem="Yk1-Dc-iuA" firstAttribute="top" secondItem="n6F-Uc-FWI" secondAttribute="top" id="NdI-b5-76b"/>
                             <constraint firstItem="Yk1-Dc-iuA" firstAttribute="leading" secondItem="eR0-pC-XIq" secondAttribute="leading" id="Tdn-a3-Ln9"/>
-                            <constraint firstItem="Rmi-tw-ySq" firstAttribute="bottom" secondItem="LZS-oG-4fd" secondAttribute="bottom" id="UHn-K2-RMj"/>
-                            <constraint firstItem="Rmi-tw-ySq" firstAttribute="centerX" secondItem="LZS-oG-4fd" secondAttribute="centerX" id="eD5-Pc-Yon"/>
                             <constraint firstAttribute="trailing" secondItem="eR0-pC-XIq" secondAttribute="trailing" id="grp-uz-u6m"/>
                             <constraint firstItem="xMr-Jb-Exq" firstAttribute="centerX" secondItem="jtX-8c-KlA" secondAttribute="centerX" id="kha-rG-dgV"/>
                             <constraint firstItem="Yk1-Dc-iuA" firstAttribute="top" secondItem="LZS-oG-4fd" secondAttribute="bottom" constant="52" id="t8r-EH-MoA"/>
@@ -878,9 +874,9 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="f9K-Sh-S7e"/>
+        <segue reference="ImQ-CG-cOZ"/>
         <segue reference="3IN-Kn-6nn"/>
-        <segue reference="Xg2-vD-vST"/>
+        <segue reference="V7e-3e-Abb"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Iconaorologio" width="114" height="117"/>

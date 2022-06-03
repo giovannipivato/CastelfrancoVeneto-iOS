@@ -85,7 +85,9 @@ class ZonaController: UIViewController {
     
     func onFinishFiltri(data: Data) {
         let dimore = Parser.getDimoreFiltri(from: data)
-        aggiornaScroll(dimore!)
+		if dimore != nil {
+			aggiornaScroll(dimore!)
+		}
     }
     
     func aggiornaScroll(_ dimore: Array<Dimora>) {

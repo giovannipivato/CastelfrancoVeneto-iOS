@@ -58,26 +58,26 @@ public class DownloadJSON {
         }.resume()
     }
     
-    public func getJSONfiltri() {
-        
-        let link = "https://prolococasteo.altervista.org/index.php/filtri"
-        print(link)
-        guard let url = URL(string: link) else {
-            return
-        }
-        
-        URLSession.shared.dataTask(with: url) { (data, response, err) in
-            if err != nil {
-                return print(err as Any)
-            }
-            
-            guard let data = data else {
-                return print("error")
-            }
-            
-            self.onFinish(data)
-        }.resume()
-    }
+	public func getJSONfiltri() {
+		
+		let link = "https://prolococasteo.altervista.org/index.php/filtri"
+		print(link)
+		guard let url = URL(string: link) else {
+			return
+		}
+		
+		URLSession.shared.dataTask(with: url) { (data, response, err) in
+			if err != nil {
+				return print(err as Any)
+			}
+			
+			guard let data1 = data else {
+				return print("error")
+			}
+			
+			self.onFinish(data1)
+		}.resume()
+	}
     
     public func getJSONpercorsi() {
         let link = "http://prolococasteo.altervista.org/index.php/percorsi"
