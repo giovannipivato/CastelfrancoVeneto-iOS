@@ -37,6 +37,7 @@
 		DB88B83827F473B000DE76CD /* Foto.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB88B83727F473B000DE76CD /* Foto.swift */; };
 		DB93EBE42847593C006B491B /* Percorso.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB93EBE32847593C006B491B /* Percorso.swift */; };
 		DB93EBE62847599A006B491B /* DettaglioPercorso.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB93EBE52847599A006B491B /* DettaglioPercorso.swift */; };
+		DB93EBE828494C91006B491B /* HotelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB93EBE728494C91006B491B /* HotelController.swift */; };
 		DBC7630D27F6144F000D1642 /* ZonaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC7630C27F6144F000D1642 /* ZonaController.swift */; };
 		DBC7630F27F67B7D000D1642 /* IntroDimoraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC7630E27F67B7D000D1642 /* IntroDimoraController.swift */; };
 /* End PBXBuildFile section */
@@ -93,6 +94,7 @@
 		DB88B83927F4CDC600DE76CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Base; path = Base.lproj/Info.plist; sourceTree = "<group>"; };
 		DB93EBE32847593C006B491B /* Percorso.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Percorso.swift; sourceTree = "<group>"; };
 		DB93EBE52847599A006B491B /* DettaglioPercorso.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DettaglioPercorso.swift; sourceTree = "<group>"; };
+		DB93EBE728494C91006B491B /* HotelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelController.swift; sourceTree = "<group>"; };
 		DBC7630C27F6144F000D1642 /* ZonaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZonaController.swift; sourceTree = "<group>"; };
 		DBC7630E27F67B7D000D1642 /* IntroDimoraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroDimoraController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -182,6 +184,7 @@
 				5B6E62C5283AC3F700449CD3 /* FavoritesController.swift */,
 				5B77A12F2843B2E60023243F /* DettaglioDimoraController.swift */,
 				5B9F76CE28469B780096D2EA /* CreditsController.swift */,
+				DB93EBE728494C91006B491B /* HotelController.swift */,
 			);
 			path = Castelturismo;
 			sourceTree = "<group>";
@@ -356,6 +359,7 @@
 				DB88B80727F43D3B00DE76CD /* HomeController.swift in Sources */,
 				DB88B80327F43D3B00DE76CD /* AppDelegate.swift in Sources */,
 				5B6E62C0283A3D8D00449CD3 /* config.swift in Sources */,
+				DB93EBE828494C91006B491B /* HotelController.swift in Sources */,
 				DB93EBE62847599A006B491B /* DettaglioPercorso.swift in Sources */,
 				5BEB01BA283A37E1000D2A15 /* extensions.swift in Sources */,
 				DBC7630F27F67B7D000D1642 /* IntroDimoraController.swift in Sources */,

@@ -244,13 +244,11 @@
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="xMr-Jb-Exq">
                                 <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
                             </activityIndicatorView>
-                            <pageControl hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="LZS-oG-4fd">
-                                <rect key="frame" x="50" y="709" width="314" height="26"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <pageControl hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="LZS-oG-4fd">
+                                <rect key="frame" x="141" y="709" width="132.5" height="26"/>
                             </pageControl>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rmi-tw-ySq">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rmi-tw-ySq">
                                 <rect key="frame" x="0.0" y="152" width="414" height="583"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <viewLayoutGuide key="contentLayoutGuide" id="VUe-a0-f9a"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="sPS-Ra-c3H"/>
                             </scrollView>
@@ -287,16 +285,79 @@
                                     <constraint firstItem="SbZ-Eg-nhH" firstAttribute="centerY" secondItem="eR0-pC-XIq" secondAttribute="centerY" id="Qsg-5h-3qc"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yk1-Dc-iuA">
+                                <rect key="frame" x="0.0" y="787" width="138" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="BYT-DE-hns"/>
+                                    <constraint firstAttribute="width" constant="138" id="rLb-eF-Ekm"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <backgroundConfiguration key="background" image="iconabar" imageContentMode="scaleAspectFit"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="imageView.ContentMode">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n6F-Uc-FWI">
+                                <rect key="frame" x="276" y="787" width="138" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="kHc-gy-fET"/>
+                                    <constraint firstAttribute="width" constant="138" id="wqN-w1-MoJ"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <backgroundConfiguration key="background" image="iconapreferiti" imageContentMode="scaleAspectFit"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="imageView.ContentMode">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LFJ-Iu-ygU">
+                                <rect key="frame" x="146" y="787" width="122" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="OWA-bE-Ich"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <backgroundConfiguration key="background" image="iconahotel" imageContentMode="scaleAspectFit"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="imageView.ContentMode">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="boE-Gl-tVU" kind="presentation" id="25O-NR-gHB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="AFX-gL-Y3F"/>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="eR0-pC-XIq" firstAttribute="leading" secondItem="jtX-8c-KlA" secondAttribute="leading" id="1nH-tw-HeM"/>
+                            <constraint firstItem="Rmi-tw-ySq" firstAttribute="top" secondItem="eR0-pC-XIq" secondAttribute="bottom" constant="8" id="4AG-gX-JXP"/>
+                            <constraint firstItem="Yk1-Dc-iuA" firstAttribute="bottom" secondItem="AFX-gL-Y3F" secondAttribute="bottom" id="5wH-RS-aaj"/>
                             <constraint firstItem="xMr-Jb-Exq" firstAttribute="centerY" secondItem="jtX-8c-KlA" secondAttribute="centerY" id="6VL-CE-CDa"/>
+                            <constraint firstItem="n6F-Uc-FWI" firstAttribute="trailing" secondItem="eR0-pC-XIq" secondAttribute="trailing" id="6df-oy-myF"/>
                             <constraint firstItem="eR0-pC-XIq" firstAttribute="top" secondItem="AFX-gL-Y3F" secondAttribute="top" id="CIq-61-1Qk"/>
+                            <constraint firstItem="Yk1-Dc-iuA" firstAttribute="top" secondItem="LFJ-Iu-ygU" secondAttribute="top" id="DSg-DH-amI"/>
+                            <constraint firstItem="n6F-Uc-FWI" firstAttribute="leading" secondItem="LFJ-Iu-ygU" secondAttribute="trailing" constant="8" id="Gx4-jL-waS"/>
+                            <constraint firstItem="n6F-Uc-FWI" firstAttribute="trailing" secondItem="Rmi-tw-ySq" secondAttribute="trailing" id="Jgd-ca-0bi"/>
+                            <constraint firstItem="Yk1-Dc-iuA" firstAttribute="leading" secondItem="Rmi-tw-ySq" secondAttribute="leading" id="KzU-fT-KD9"/>
+                            <constraint firstItem="Yk1-Dc-iuA" firstAttribute="top" secondItem="n6F-Uc-FWI" secondAttribute="top" id="NdI-b5-76b"/>
+                            <constraint firstItem="Yk1-Dc-iuA" firstAttribute="leading" secondItem="eR0-pC-XIq" secondAttribute="leading" id="Tdn-a3-Ln9"/>
+                            <constraint firstItem="Rmi-tw-ySq" firstAttribute="bottom" secondItem="LZS-oG-4fd" secondAttribute="bottom" id="UHn-K2-RMj"/>
+                            <constraint firstItem="Rmi-tw-ySq" firstAttribute="centerX" secondItem="LZS-oG-4fd" secondAttribute="centerX" id="eD5-Pc-Yon"/>
                             <constraint firstAttribute="trailing" secondItem="eR0-pC-XIq" secondAttribute="trailing" id="grp-uz-u6m"/>
                             <constraint firstItem="xMr-Jb-Exq" firstAttribute="centerX" secondItem="jtX-8c-KlA" secondAttribute="centerX" id="kha-rG-dgV"/>
+                            <constraint firstItem="Yk1-Dc-iuA" firstAttribute="top" secondItem="LZS-oG-4fd" secondAttribute="bottom" constant="52" id="t8r-EH-MoA"/>
+                            <constraint firstItem="LFJ-Iu-ygU" firstAttribute="leading" secondItem="Yk1-Dc-iuA" secondAttribute="trailing" constant="8" id="tZF-fz-dZa"/>
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="XCh-jh-TgU" appends="YES" id="2Zo-0J-AhX"/>
@@ -757,6 +818,64 @@
             </objects>
             <point key="canvasLocation" x="1129" y="-716"/>
         </scene>
+        <!--Filtri Controller-->
+        <scene sceneID="O9p-Jw-MuS">
+            <objects>
+                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="boE-Gl-tVU" customClass="FiltriController" customModule="Castelturismo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="osh-HX-Uw7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xG5-WI-E6D">
+                                <rect key="frame" x="0.0" y="44" width="414" height="100"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TMd-bM-gtB">
+                                        <rect key="frame" x="24" y="32.5" width="40" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="EOl-BJ-ftK"/>
+                                            <constraint firstAttribute="width" constant="40" id="xyc-QR-16u"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <backgroundConfiguration key="background" image="iconafrecciaback" imageContentMode="scaleAspectFit"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="iconahotel" translatesAutoresizingMaskIntoConstraints="NO" id="f56-K1-iyi">
+                                        <rect key="frame" x="150" y="8" width="114" height="71"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="EAE-0z-Ps1"/>
+                                    <constraint firstItem="TMd-bM-gtB" firstAttribute="leading" secondItem="xG5-WI-E6D" secondAttribute="leading" constant="24" id="Nxx-nC-ily"/>
+                                    <constraint firstItem="TMd-bM-gtB" firstAttribute="centerY" secondItem="xG5-WI-E6D" secondAttribute="centerY" id="qfb-eU-Zov"/>
+                                </constraints>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L4s-ul-49K">
+                                <rect key="frame" x="0.0" y="144" width="414" height="752"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="nc3-ie-rOh"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="L4s-ul-49K" firstAttribute="leading" secondItem="nc3-ie-rOh" secondAttribute="leading" id="0WX-vh-EHY"/>
+                            <constraint firstAttribute="bottom" secondItem="L4s-ul-49K" secondAttribute="bottom" id="4fW-ZT-RDj"/>
+                            <constraint firstAttribute="trailing" secondItem="xG5-WI-E6D" secondAttribute="trailing" id="JzH-4v-YNQ"/>
+                            <constraint firstItem="L4s-ul-49K" firstAttribute="trailing" secondItem="nc3-ie-rOh" secondAttribute="trailing" id="No7-Vv-FMe"/>
+                            <constraint firstItem="L4s-ul-49K" firstAttribute="top" secondItem="xG5-WI-E6D" secondAttribute="bottom" id="Rqd-SF-H3K"/>
+                            <constraint firstItem="xG5-WI-E6D" firstAttribute="leading" secondItem="nc3-ie-rOh" secondAttribute="leading" id="aBt-AQ-01g"/>
+                            <constraint firstItem="xG5-WI-E6D" firstAttribute="top" secondItem="nc3-ie-rOh" secondAttribute="top" id="wOK-2n-fBF"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Z6O-gA-y2d"/>
+                    <connections>
+                        <outlet property="scrollView" destination="L4s-ul-49K" id="kqU-zQ-RSV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kS2-2l-Gy1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2100" y="843.75"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="f9K-Sh-S7e"/>
@@ -765,9 +884,11 @@
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Iconaorologio" width="114" height="117"/>
+        <image name="iconabar" width="110" height="110"/>
         <image name="iconacerca" width="105" height="105"/>
         <image name="iconafrecciaback" width="84" height="85"/>
         <image name="iconafrecciagiu" width="85" height="84"/>
+        <image name="iconahotel" width="40" height="40"/>
         <image name="iconainfo" width="105" height="105"/>
         <image name="iconapreferiti" width="76" height="77"/>
     </resources>
